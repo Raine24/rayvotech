@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rayvotech | Portfolio</title>
+    <meta name="description" content="Explore our portfolio of cutting-edge website designs, web applications, and SEO case studies.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="theme-aurora">
+    <div class="page-aurora" aria-hidden="true">
+        <div class="page-aurora-blob pa-1"></div>
+        <div class="page-aurora-blob pa-2"></div>
+        <div class="page-aurora-blob pa-3"></div>
+    </div>
+    
+    <div id="initial-loader">
+        <div class="pro-spinner"><div class="pro-spinner-inner"></div></div>
+        <div class="loader-progress-bar"></div>
+    </div>
+
+    <div class="reading-progress-container"><div class="reading-progress-bar" id="reading-progress"></div></div>
+    
+    <div class="cursor-dot" data-cursor-dot></div>
+    <div class="cursor-outline" data-cursor-outline></div>
+
+    <nav class="navbar glass-effect">
+        <div class="nav-container container">
+            <a href="index.html" class="logo">Rayvo<span>tech</span></a>
+            <div class="nav-links">
+                <a href="about.html">About Us</a>
+                <a href="services.html">Services</a>
+                <a href="portfolio.html">Portfolio</a>
+            </div>
+            <a href="hire.html" class="btn btn-primary">Hire Us</a>
+        </div>
+    </nav>
+
+    <section class="hero" id="hero" style="min-height: 50svh; padding-top: 10rem; padding-bottom: 5rem;">
+        <div class="container hero-content text-center">
+            <div class="y2k-badge reveal-text">OUR WORK</div>
+            <h1 class="hero-title reveal-text delay-1">Proven <br> <span class="text-gradient liquid-text">Results.</span></h1>
+            <p class="hero-subtitle reveal-text delay-2" style="max-width: 600px; margin: 0 auto;">A look at some of the brands we've helped elevate through strategic design and development.</p>
+        </div>
+    </section>
+
+    <!-- Portfolio Grid -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="testimonials-grid" style="grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));">
+                
+                <!-- Case Study 1 -->
+                <div class="testimonial-card fade-up glass-card" style="padding: 0; overflow: hidden; justify-content: flex-start;">
+                    <div style="height: 250px; background: linear-gradient(135deg, rgba(124, 58, 237, 0.2), rgba(0, 230, 240, 0.1)); border-bottom: 1px solid rgba(255,255,255,0.08); display:flex; align-items:center; justify-content:center;">
+                        <span style="font-family: var(--font-heading); color: var(--text-inverse); letter-spacing: 2px;">NEXATECH SOLUTIONS</span>
+                    </div>
+                    <div style="padding: 2.5rem;">
+                        <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">Corporate Redesign</h3>
+                        <p class="tc-quote" style="margin-bottom: 2rem; font-style: normal;">Complete brand overhaul and corporate website redesign resulting in a 2x increase in lead generation in the first quarter post-launch.</p>
+                        <div class="tech-icons" style="margin-bottom:0; justify-content:flex-start;">
+                            <span class="tech-badge"><i class="ph ph-figma-logo"></i> UI/UX</span>
+                            <span class="tech-badge"><i class="ph ph-code"></i> Next.js</span>
+                            <span class="tech-badge"><i class="ph ph-magnifying-glass"></i> SEO</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Case Study 2 -->
+                <div class="testimonial-card fade-up delay-1 glass-card" style="padding: 0; overflow: hidden; justify-content: flex-start;">
+                    <div style="height: 250px; background: linear-gradient(135deg, rgba(16, 185, 129, 0.2), rgba(59, 130, 246, 0.1)); border-bottom: 1px solid rgba(255,255,255,0.08); display:flex; align-items:center; justify-content:center;">
+                        <span style="font-family: var(--font-heading); color: var(--text-inverse); letter-spacing: 2px;">SHOPWAVE AFRICA</span>
+                    </div>
+                    <div style="padding: 2.5rem;">
+                        <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">E-Commerce Platform</h3>
+                        <p class="tc-quote" style="margin-bottom: 2rem; font-style: normal;">High-performance, scalable e-commerce platform built for high volume traffic. Increased QoQ revenue by 60% through optimized checkout flow.</p>
+                        <div class="tech-icons" style="margin-bottom:0; justify-content:flex-start;">
+                            <span class="tech-badge"><i class="ph ph-shopping-cart"></i> E-Commerce</span>
+                            <span class="tech-badge"><i class="ph ph-code"></i> Shopify</span>
+                            <span class="tech-badge"><i class="ph ph-lightning"></i> CRO</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Case Study 3 -->
+                <div class="testimonial-card fade-up delay-2 glass-card" style="padding: 0; overflow: hidden; justify-content: flex-start;">
+                    <div style="height: 250px; background: linear-gradient(135deg, rgba(239, 68, 68, 0.2), rgba(245, 158, 11, 0.1)); border-bottom: 1px solid rgba(255,255,255,0.08); display:flex; align-items:center; justify-content:center;">
+                        <span style="font-family: var(--font-heading); color: var(--text-inverse); letter-spacing: 2px;">GROWTHPATH AGENCY</span>
+                    </div>
+                    <div style="padding: 2.5rem;">
+                        <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">Web App & SEO</h3>
+                        <p class="tc-quote" style="margin-bottom: 2rem; font-style: normal;">Engineered a completely custom lightweight web application and deployed aggressive technical SEO strategies to climb Google rankings rapidly.</p>
+                        <div class="tech-icons" style="margin-bottom:0; justify-content:flex-start;">
+                            <span class="tech-badge"><i class="ph ph-globe"></i> Web App</span>
+                            <span class="tech-badge"><i class="ph ph-code"></i> React</span>
+                            <span class="tech-badge"><i class="ph ph-chart-line-up"></i> Technical SEO</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="massive-cta fade-up">
+                <div class="cta-content">
+                    <h2 style="color: var(--text-inverse); font-size: 4rem;">Ready to build a brand <br> that stands out?</h2>
+                    <p style="color: var(--color-dominant); font-weight:600; margin-top: 1.5rem; font-size: 1.25rem;">Let's collaborate on your next big project. Elevate your digital presence today.</p>
+                </div>
+                <div class="cta-action" style="margin-top: 3rem;">
+                    <a href="hire.html" class="btn btn-outline btn-lg" style="border-color: var(--color-dominant); color: var(--color-dominant);">Start the Conversation <i class="ph ph-arrow-right"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">Rayvo<span>tech</span></a>
+                    <p>Delivering clarity, creativity, and conversion.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="link-group">
+                        <h4>Company</h4>
+                        <a href="about.html">About Us</a>
+                        <a href="services.html">Services</a>
+                        <a href="portfolio.html">Our Work</a>
+                    </div>
+                    <div class="link-group">
+                        <h4>Social</h4>
+                        <a href="#">Instagram</a>
+                        <a href="#">LinkedIn</a>
+                        <a href="#">Twitter</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-legal">
+                <p>&copy; 2026 Rayvotech Digital. Built with passion.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
