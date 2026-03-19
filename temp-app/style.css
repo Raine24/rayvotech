@@ -208,9 +208,11 @@ a { color: inherit; text-decoration: none; transition: all var(--transition-fast
    ========================================================================== */
 .btn {
     display: inline-flex; align-items: center; justify-content: center;
-    gap: 0.5rem; padding: 1rem 2rem;
+    gap: 0.5rem; padding: 0.8rem 1.75rem;
     font-family: var(--font-heading);
-    font-weight: 700; text-transform: uppercase;
+    font-size: 0.9rem;
+    font-weight: 600; text-transform: capitalize;
+    letter-spacing: 0.5px;
     cursor: none; transition: all var(--transition-fast);
 }
 
@@ -276,7 +278,7 @@ input:focus, textarea:focus {
    ========================================================================== */
 .navbar {
     position: fixed; top: 0; width: 100%; z-index: 100;
-    padding: 0.75rem 0; border-bottom: 1px solid transparent;
+    padding: 0.6rem 0; border-bottom: 1px solid transparent;
 }
 .glass-effect.scrolled {
     background: var(--color-surface);
@@ -286,11 +288,11 @@ input:focus, textarea:focus {
 }
 .nav-container { display: flex; justify-content: space-between; align-items: center; }
 
-.logo { font-size: 1.75rem; text-transform: uppercase; color: var(--text-primary); }
+.logo { font-size: 1.5rem; font-weight: 600; text-transform: capitalize; letter-spacing: -0.5px; color: var(--text-primary); }
 .logo span { font-weight: 400; color: var(--color-accent); }
 
-.nav-links { display: flex; gap: 2.5rem; }
-.nav-links a { font-family: var(--font-heading); font-size: 0.9rem; font-weight: 600; text-transform: uppercase; color: var(--text-primary); }
+.nav-links { display: flex; gap: 2.5rem; align-items: center; }
+.nav-links a { font-family: var(--font-heading); font-size: 0.85rem; font-weight: 500; text-transform: capitalize; letter-spacing: 0.3px; color: var(--text-primary); }
 .nav-links a:hover { color: var(--color-accent); }
 
 
