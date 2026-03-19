@@ -277,30 +277,59 @@ input:focus, textarea:focus {
    Navigation
    ========================================================================== */
 .navbar {
-    position: fixed; top: 0; width: 100%; z-index: 100;
-    padding: 0.6rem 0; border-bottom: 1px solid transparent;
+    position: fixed; 
+    top: 1.5rem; 
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 1100px;
+    z-index: 100;
+    padding: 0.5rem 1.25rem; 
+    border-radius: 100px;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    border-bottom: none;
 }
 .glass-effect.scrolled {
-    background: var(--color-surface);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-    border-bottom: 1px solid var(--border-glass);
+    background: rgba(10, 10, 14, 0.7);
+    backdrop-filter: blur(24px) saturate(200%);
+    -webkit-backdrop-filter: blur(24px) saturate(200%);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
 }
 .nav-container { display: flex; justify-content: space-between; align-items: center; }
 
-.logo { font-size: 1.5rem; font-weight: 600; text-transform: capitalize; letter-spacing: -0.5px; color: var(--text-primary); }
+.logo { font-size: 1.35rem; font-weight: 700; text-transform: capitalize; letter-spacing: -0.5px; color: var(--text-primary); }
 .logo span { font-weight: 400; color: var(--color-accent); }
 
 .nav-links { display: flex; gap: 2.5rem; align-items: center; }
-.nav-links a { font-family: var(--font-heading); font-size: 0.85rem; font-weight: 500; text-transform: capitalize; letter-spacing: 0.3px; color: var(--text-primary); }
-.nav-links a:hover { color: var(--color-accent); }
+.nav-links a { font-family: var(--font-body); font-size: 0.9rem; font-weight: 400; text-transform: lowercase; letter-spacing: 0px; color: rgba(255,255,255,0.7); transition: all var(--transition-base); }
+.nav-links a:hover { color: #fff; }
+
+/* Dedicated sophisticated header button */
+.navbar .btn-primary {
+    font-size: 0.85rem;
+    padding: 0.5rem 1.4rem;
+    text-transform: lowercase;
+    background: #ffffff;
+    color: #000000;
+    font-weight: 600;
+    border-radius: 100px;
+    box-shadow: none;
+    letter-spacing: 0;
+}
+.navbar .btn-primary:hover {
+    background: rgba(255,255,255,0.85);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 15px rgba(255,255,255,0.1);
+}
 
 
 .glass-effect, .navbar.scrolled {
-    backdrop-filter: blur(10px) saturate(180%);
-    -webkit-backdrop-filter: blur(10px) saturate(180%);
-    background: rgba(255, 255, 255, 0.03); /* Kept subtle for dark mode */
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(10, 10, 14, 0.7);
+    backdrop-filter: blur(24px) saturate(200%);
+    -webkit-backdrop-filter: blur(24px) saturate(200%);
+    border: 1px solid rgba(255, 255, 255, 0.08); /* Sophisticated thin border */
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
 }
 
 /* ==========================================================================
