@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rayvotech | Website Design</title>
+    <meta name="description" content="Rayvotech services include UI/UX design, custom web development, and SEO optimization.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="theme-aurora">
+    <div class="page-aurora" aria-hidden="true">
+        <div class="page-aurora-blob pa-1"></div>
+        <div class="page-aurora-blob pa-2"></div>
+        <div class="page-aurora-blob pa-3"></div>
+    </div>
+    
+    <div id="initial-loader">
+        <div class="pro-spinner"><div class="pro-spinner-inner"></div></div>
+        <div class="loader-progress-bar"></div>
+    </div>
+
+    <div class="reading-progress-container"><div class="reading-progress-bar" id="reading-progress"></div></div>
+    
+    <div class="cursor-dot" data-cursor-dot></div>
+    <div class="cursor-outline" data-cursor-outline></div>
+
+    <!-- Navigation -->
+    <nav class="navbar glass-effect">
+        <div class="nav-container container">
+            <a href="index.html" class="logo">Rayvo<span>tech</span></a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="services.html">Services</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="pricing.html">Pricing</a>
+                        <a href="faqs.html">FAQs</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <a href="hire.html" class="btn btn-primary">Hire Us</a>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="hero" id="hero" style="min-height: auto; padding-top: 10rem; padding-bottom: 3rem;">
+        <div class="container hero-content text-center">
+            <div class="y2k-badge reveal-text">WEBSITE DESIGN</div>
+            <h1 class="hero-title reveal-text delay-1" style="font-size: 5rem; line-height: 1.1;">Digital <br> <span class="text-gradient liquid-text">Excellence.</span></h1>
+            <p class="hero-subtitle reveal-text delay-2" style="max-width: 800px; margin: 0 auto; font-size: 1.25rem;">
+                Your website is the most powerful sales tool your business owns. It works 24 hours a day, 7 days a week, representing your brand to every potential client who finds you online.
+            </p>
+        </div>
+    </section>
+
+    <!-- Content Section -->
+    <section style="padding: 2rem 0 6rem 0;">
+        <div class="container" style="max-width: 1200px;">
+            
+            <div class="fade-up" style="max-width: 900px; margin: 0 auto 6rem auto; text-align: center;">
+                <p style="font-size: 1.35rem; line-height: 1.8; color: var(--text-secondary);">
+                    At Rayvotech, we don't build websites &mdash; we craft digital experiences that command attention, build trust, and drive action. From the first pixel to the final launch, every decision we make is rooted in one goal: making your brand impossible to ignore.
+                </p>
+            </div>
+
+            <!-- Massive Image Showcase -->
+            <div class="fade-up delay-1" style="width: 100%; height: 600px; border-radius: 32px; overflow: hidden; margin-bottom: 8rem; box-shadow: 0 40px 80px rgba(0,0,0,0.6); border: 1px solid rgba(255,255,255,0.05); position: relative;">
+                <img src="https://i.imgur.com/LrXXn2g.jpg" alt="Website Design Showcase" style="width: 100%; height: 100%; object-fit: cover; object-position: center; transition: transform 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                <div style="position: absolute; bottom: 0; left: 0; width: 100%; height: 50%; background: linear-gradient(to top, rgba(10,10,14,0.9), transparent); pointer-events: none;"></div>
+            </div>
+
+            <!-- What We Design (Bento Grid) -->
+            <div style="text-align: center; margin-bottom: 3rem;">
+                <h2 style="font-size: 3rem;">What We Design</h2>
+            </div>
+            
+            <div class="bento-grid fade-up delay-1" style="margin-bottom: 8rem;">
+                <!-- Card 1 -->
+                <div class="bento-item glass-card beam-card" style="grid-column: span 2; padding: 3rem; display: flex; flex-direction: column; justify-content: center; position: relative; overflow: hidden;">
+                    <div style="position: absolute; top: -100px; left: -100px; width: 300px; height: 300px; background: rgba(0, 230, 240, 0.1); filter: blur(100px); border-radius: 50%;"></div>
+                    <div class="card-icon chrome-icon" style="margin-bottom: 1.5rem; width: 50px; height: 50px; display: flex; align-items: center; justify-content: center; font-size: 1.5rem;"><i class="ph ph-briefcase"></i></div>
+                    <h3 style="font-size: 2rem; margin-bottom: 1rem;">Business Websites</h3>
+                    <p style="font-size: 1.1rem; line-height: 1.7; color: var(--text-secondary); margin: 0;">
+                        Your brand story, told beautifully. We design professional, conversion-focused websites for businesses of all sizes &mdash; built to impress on first visit and keep visitors coming back. Whether you're a solo founder or a growing company, we create a digital home that reflects the quality of what you do.
+                    </p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bento-item glass-card" style="grid-column: span 1; padding: 3rem;">
+                    <div class="card-icon gradient-icon" style="background: linear-gradient(135deg, #a855f7, #6366f1); margin-bottom: 1.5rem; width: 50px; height: 50px; display: flex; align-items: center; justify-content: center; font-size: 1.5rem;"><i class="ph ph-rocket"></i></div>
+                    <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">Landing Pages</h3>
+                    <p style="font-size: 1rem; line-height: 1.7; color: var(--text-secondary); margin: 0;">
+                        One page. One goal. Maximum impact. Our landing pages are engineered to convert &mdash; with sharp copy, strategic layouts, and clear calls to action that turn visitors into leads and leads into customers.
+                    </p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bento-item glass-card" style="grid-column: span 1; padding: 3rem;">
+                    <div class="card-icon gradient-icon" style="background: linear-gradient(135deg, #f59e0b, #ef4444); margin-bottom: 1.5rem; width: 50px; height: 50px; display: flex; align-items: center; justify-content: center; font-size: 1.5rem;"><i class="ph ph-shopping-cart"></i></div>
+                    <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">E-Commerce Websites</h3>
+                    <p style="font-size: 1rem; line-height: 1.7; color: var(--text-secondary); margin: 0;">
+                        We design online stores that don't just display products &mdash; they sell them. Clean product pages, intuitive navigation, frictionless checkout flows, and trust-building design elements.
+                    </p>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="bento-item glass-card" style="grid-column: span 1; padding: 3rem;">
+                    <div class="card-icon gradient-icon" style="background: linear-gradient(135deg, #10b981, #3b82f6); margin-bottom: 1.5rem; width: 50px; height: 50px; display: flex; align-items: center; justify-content: center; font-size: 1.5rem;"><i class="ph ph-paint-brush"></i></div>
+                    <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">Portfolio & Personal Brand</h3>
+                    <p style="font-size: 1rem; line-height: 1.7; color: var(--text-secondary); margin: 0;">
+                        Your work speaks for itself &mdash; but only if it's presented right. We design portfolio sites that put your best work front and center, making a lasting impression.
+                    </p>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="bento-item glass-card" style="grid-column: span 1; padding: 3rem;">
+                    <div class="card-icon chrome-icon" style="margin-bottom: 1.5rem; width: 50px; height: 50px; display: flex; align-items: center; justify-content: center; font-size: 1.5rem;"><i class="ph ph-arrows-clockwise"></i></div>
+                    <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">Redesigns</h3>
+                    <p style="font-size: 1rem; line-height: 1.7; color: var(--text-secondary); margin: 0;">
+                        Is your current website letting your brand down? We audit what you have, identify what's holding you back, and rebuild it into something you're proud to share. 
+                    </p>
+                </div>
+            </div>
+
+            <!-- What Sets Us Apart -->
+            <div class="fade-up" style="margin-bottom: 8rem;">
+                <h2 style="font-size: 3rem; text-align: center; margin-bottom: 3rem;">What Sets Our Designs Apart</h2>
+                
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1px; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.05); border-radius: 24px; overflow: hidden;">
+                    
+                    <div style="background: rgba(10,10,14,0.9); padding: 3rem;">
+                        <h4 style="font-size: 1.25rem; color: var(--color-accent); margin-bottom: 1rem;">Brand Alignment</h4>
+                        <p style="color: var(--text-secondary); line-height: 1.6; margin: 0;">Every color, font, layout, and image choice is made with your brand identity in mind. Your website should feel like a natural extension of who you are &mdash; not a generic template.</p>
+                    </div>
+                    
+                    <div style="background: rgba(10,10,14,0.9); padding: 3rem;">
+                        <h4 style="font-size: 1.25rem; color: var(--color-accent); margin-bottom: 1rem;">Responsive Design</h4>
+                        <p style="color: var(--text-secondary); line-height: 1.6; margin: 0;">Over 60% of web traffic comes from mobile devices. Every website we design looks and performs flawlessly across all screen sizes &mdash; from huge monitors to smartphone screens.</p>
+                    </div>
+
+                    <div style="background: rgba(10,10,14,0.9); padding: 3rem;">
+                        <h4 style="font-size: 1.25rem; color: var(--color-accent); margin-bottom: 1rem;">Performance Optimized</h4>
+                        <p style="color: var(--text-secondary); line-height: 1.6; margin: 0;">A beautiful website that loads slowly loses customers. We optimize every site for speed &mdash; compressing assets, streamlining code, and keeping bounce rates low.</p>
+                    </div>
+
+                    <div style="background: rgba(10,10,14,0.9); padding: 3rem;">
+                        <h4 style="font-size: 1.25rem; color: var(--color-accent); margin-bottom: 1rem;">Conversion Focused</h4>
+                        <p style="color: var(--text-secondary); line-height: 1.6; margin: 0;">Good design isn't just about aesthetics &mdash; it's about results. We strategically place calls to action and structure page layouts to guide user behavior.</p>
+                    </div>
+
+                    <div style="background: rgba(10,10,14,0.9); padding: 3rem; grid-column: auto;">
+                        <h4 style="font-size: 1.25rem; color: var(--color-accent); margin-bottom: 1rem;">SEO Ready</h4>
+                        <p style="color: var(--text-secondary); line-height: 1.6; margin: 0;">Every website we build comes with solid SEO foundations &mdash; clean code structure, proper heading hierarchy, meta tags, and fast load speeds for higher rankings.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Two Column: Process & What You Get -->
+            <div class="fade-up" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(450px, 1fr)); gap: 4rem; margin-bottom: 8rem;">
+                <!-- Process -->
+                <div>
+                    <h2 style="font-size: 2.5rem; margin-bottom: 2rem;">Our Design Process</h2>
+                    <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 1.5rem;">
+                        <li style="display: flex; gap: 1.5rem; align-items: flex-start;">
+                            <div style="width: 40px; height: 40px; border-radius: 50%; background: rgba(0,230,240,0.1); color: var(--color-accent); display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">1</div>
+                            <div>
+                                <strong style="display: block; font-size: 1.15rem; margin-bottom: 0.25rem;">Discovery</strong>
+                                <span style="color: var(--text-secondary); line-height: 1.6;">We learn everything about your brand, audience, competitors, and goals.</span>
+                            </div>
+                        </li>
+                        <li style="display: flex; gap: 1.5rem; align-items: flex-start;">
+                            <div style="width: 40px; height: 40px; border-radius: 50%; background: rgba(0,230,240,0.1); color: var(--color-accent); display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">2</div>
+                            <div>
+                                <strong style="display: block; font-size: 1.15rem; margin-bottom: 0.25rem;">Strategy</strong>
+                                <span style="color: var(--text-secondary); line-height: 1.6;">We define the site structure, page hierarchy, and conversion strategy.</span>
+                            </div>
+                        </li>
+                        <li style="display: flex; gap: 1.5rem; align-items: flex-start;">
+                            <div style="width: 40px; height: 40px; border-radius: 50%; background: rgba(0,230,240,0.1); color: var(--color-accent); display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">3</div>
+                            <div>
+                                <strong style="display: block; font-size: 1.15rem; margin-bottom: 0.25rem;">Design</strong>
+                                <span style="color: var(--text-secondary); line-height: 1.6;">We create stunning visual designs tailored to your brand identity.</span>
+                            </div>
+                        </li>
+                        <li style="display: flex; gap: 1.5rem; align-items: flex-start;">
+                            <div style="width: 40px; height: 40px; border-radius: 50%; background: rgba(0,230,240,0.1); color: var(--color-accent); display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">4</div>
+                            <div>
+                                <strong style="display: block; font-size: 1.15rem; margin-bottom: 0.25rem;">Review</strong>
+                                <span style="color: var(--text-secondary); line-height: 1.6;">We refine based on your feedback through structured revision rounds.</span>
+                            </div>
+                        </li>
+                        <li style="display: flex; gap: 1.5rem; align-items: flex-start;">
+                            <div style="width: 40px; height: 40px; border-radius: 50%; background: rgba(0,230,240,0.1); color: var(--color-accent); display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">5</div>
+                            <div>
+                                <strong style="display: block; font-size: 1.15rem; margin-bottom: 0.25rem;">Launch & Support</strong>
+                                <span style="color: var(--text-secondary); line-height: 1.6;">We deliver a tested, optimized website and stay with you post-launch.</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- What You Get -->
+                <div class="glass-card" style="padding: 3rem; background: rgba(255,255,255,0.02);">
+                    <h2 style="font-size: 2.5rem; margin-bottom: 2rem;">What You Get</h2>
+                    <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 1.25rem; font-size: 1.1rem; color: var(--text-primary);">
+                        <li style="display: flex; align-items: center; gap: 1rem;"><i class="ph ph-check-circle" style="color: var(--color-accent); font-size: 1.5rem;"></i> Custom responsive design &mdash; no templates, ever</li>
+                        <li style="display: flex; align-items: center; gap: 1rem;"><i class="ph ph-check-circle" style="color: var(--color-accent); font-size: 1.5rem;"></i> Mobile and tablet optimized layouts</li>
+                        <li style="display: flex; align-items: center; gap: 1rem;"><i class="ph ph-check-circle" style="color: var(--color-accent); font-size: 1.5rem;"></i> Fast loading and performance optimized</li>
+                        <li style="display: flex; align-items: center; gap: 1rem;"><i class="ph ph-check-circle" style="color: var(--color-accent); font-size: 1.5rem;"></i> SEO-ready structure and metadata</li>
+                        <li style="display: flex; align-items: center; gap: 1rem;"><i class="ph ph-check-circle" style="color: var(--color-accent); font-size: 1.5rem;"></i> Cross-browser tested and compatible</li>
+                        <li style="display: flex; align-items: center; gap: 1rem;"><i class="ph ph-check-circle" style="color: var(--color-accent); font-size: 1.5rem;"></i> Clean handoff to your team or CMS</li>
+                        <li style="display: flex; align-items: center; gap: 1rem;"><i class="ph ph-check-circle" style="color: var(--color-accent); font-size: 1.5rem;"></i> Post-launch support included</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Why Us / CTA -->
+            <div class="glass-card fade-up" style="padding: 5rem; text-align: center; background: linear-gradient(135deg, rgba(0, 230, 240, 0.1), rgba(168, 85, 247, 0.1)); border-radius: 24px;">
+                <h2 style="font-size: 3rem; margin-bottom: 2rem;">Why Rayvotech</h2>
+                <p style="font-size: 1.25rem; line-height: 1.8; color: var(--text-secondary); max-width: 900px; margin: 0 auto 2rem auto;">
+                    We're a team of designers who genuinely love what we do. Every project we take on gets our full creative energy, strategic thinking, and relentless attention to detail. We don't do cookie-cutter. We don't do average. We build websites that make our clients proud and their competitors nervous.
+                </p>
+                <p style="font-size: 1.25rem; color: var(--text-primary); font-weight: 500; margin-bottom: 4rem;">
+                    <em>Based in Omaha, Nebraska &mdash; built for brands across the entire US market.</em>
+                </p>
+                
+                <h3 style="font-size: 2.25rem; margin-bottom: 0.5rem;">Ready for a website that works as hard as you do?</h3>
+                <p style="color: var(--color-accent); font-size: 1.25rem; margin-bottom: 3rem;">Let's build something your visitors will never forget.</p>
+                
+                <a href="hire.html" class="btn btn-primary btn-lg">Start Your Project &rarr;</a>
+            </div>
+
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="footer" id="contact" style="padding-top: 5rem;">
+        <div class="container">
+            <div class="massive-cta fade-up">
+                <div class="cta-content">
+                    <h2 style="color: var(--text-inverse); font-size: 4rem;">Let's Build Something <br> <span style="font-style: italic; color: #a855f7;">Legendary.</span></h2>
+                    <p style="color: var(--color-dominant); font-weight:600; margin-top: 1.5rem; font-size: 1.25rem;">
+                        We're a team of designers, developers, and digital strategists who wake up every day excited to solve hard problems and build things that matter.
+                    </p>
+                    <p style="color: var(--color-dominant); font-weight:400; margin-top: 1rem; font-size: 1.1rem; max-width: 700px; margin-left: auto; margin-right: auto;">
+                        If you're ready to take your digital presence to the next level, we're ready to make it happen.<br>
+                        <strong>Rayvotech — Smart. Fast. Creative.</strong>
+                    </p>
+                </div>
+                <div class="cta-action" style="margin-top: 3rem;">
+                    <a href="hire.html" class="btn btn-outline btn-lg" style="border-color: var(--color-dominant); color: var(--color-dominant);">Start the Conversation <i class="ph ph-arrow-right"></i></a>
+                </div>
+            </div>
+            
+            
+            <style>
+                .footer-grid {
+                    display: grid;
+                    grid-template-columns: 2fr 1fr 1fr 1fr;
+                    gap: 4rem;
+                    padding: 4rem 0;
+                    border-top: 1px solid rgba(255,255,255,0.1);
+                    margin-top: 5rem;
+                }
+                .footer-grid h4 {
+                    font-size: 1.25rem;
+                    color: #fff;
+                    margin-bottom: 1.5rem;
+                    position: relative;
+                    padding-bottom: 0.5rem;
+                }
+                .footer-grid h4::after {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    width: 30px;
+                    height: 2px;
+                    background: var(--color-accent);
+                }
+                .footer-links-col {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1rem;
+                }
+                .footer-links-col a {
+                    color: var(--text-secondary);
+                    text-decoration: none;
+                    transition: all 0.3s ease;
+                    font-size: 1.05rem;
+                    display: inline-block;
+                }
+                .footer-links-col a:hover {
+                    color: var(--color-accent);
+                    transform: translateX(5px);
+                }
+                .social-circle {
+                    width: 45px;
+                    height: 45px;
+                    border-radius: 50%;
+                    background: rgba(255,255,255,0.05);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: var(--text-primary);
+                    font-size: 1.25rem;
+                    transition: all 0.3s ease;
+                }
+                .social-circle:hover {
+                    background: var(--color-accent);
+                    color: #000;
+                    transform: translateY(-5px);
+                }
+                @media (max-width: 900px) {
+                    .footer-grid {
+                        grid-template-columns: 1fr 1fr;
+                        gap: 2rem;
+                    }
+                }
+                @media (max-width: 600px) {
+                    .footer-grid {
+                        grid-template-columns: 1fr;
+                        gap: 3rem;
+                    }
+                }
+            </style>
+            
+            <div class="footer-grid">
+                <!-- Brand Col -->
+                <div class="footer-brand" style="margin: 0;">
+                    <a href="index.html" class="logo" style="font-size: 2.25rem; margin-bottom: 1.5rem; display: block;">Rayvo<span style="color: var(--color-accent);">tech</span></a>
+                    <p style="color: var(--text-secondary); line-height: 1.8; max-width: 300px; margin-bottom: 2.5rem; font-size: 1.1rem;">We craft digital experiences that command attention, build trust, and drive action for ambitious brands across the US.</p>
+                    <div style="display: flex; gap: 1rem;">
+                        <a href="#" class="social-circle"><i class="ph ph-twitter-logo"></i></a>
+                        <a href="#" class="social-circle"><i class="ph ph-linkedin-logo"></i></a>
+                        <a href="#" class="social-circle"><i class="ph ph-instagram-logo"></i></a>
+                        <a href="#" class="social-circle"><i class="ph ph-dribbble-logo"></i></a>
+                    </div>
+                </div>
+
+                <!-- Company -->
+                <div class="footer-links-col">
+                    <h4>Company</h4>
+                    <a href="about.html">About Us</a>
+                    <a href="portfolio.html">Our Work</a>
+                    <a href="pricing.html">Pricing Structure</a>
+                    <a href="faqs.html">FAQs & Support</a>
+                    <a href="contact.html">Contact Us</a>
+                </div>
+
+                <!-- Services -->
+                <div class="footer-links-col">
+                    <h4>Services</h4>
+                    <a href="service-website-design.html">Website Design</a>
+                    <a href="service-ui-ux-design.html">UI/UX Layouts</a>
+                    <a href="service-web-development.html">Web Development</a>
+                    <a href="service-seo-growth.html">SEO & Growth</a>
+                </div>
+
+                <!-- Legal -->
+                <div class="footer-links-col">
+                    <h4>Legal</h4>
+                    <a href="terms.html">Terms & Conditions</a>
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="cookies.html">Cookies Policy</a>
+                    <a href="disclaimer.html">Disclaimer</a>
+                </div>
+            </div>
+
+            <div class="footer-legal" style="padding: 2.5rem 0; border-top: 1px solid rgba(255,255,255,0.05); color: var(--text-secondary); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1.5rem; margin-top: 2rem;">
+                <p style="margin: 0; font-size: 1rem;">&copy; 2026 Rayvotech Digital. Built with precision.</p>
+                <div style="display: flex; gap: 1.5rem; font-size: 0.95rem;">
+                    <span style="display: flex; align-items: center; gap: 0.5rem;"><i class="ph-fill ph-check-circle" style="color: var(--color-accent);"></i> Secure & Operational</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

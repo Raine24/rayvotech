@@ -218,31 +218,126 @@
                 </div>
             </div>
             
-            <div class="footer-bottom">
-                <div class="footer-brand">
-                    <a href="index.html" class="logo">Rayvo<span>tech</span></a>
-                    <p>Delivering clarity, creativity, and conversion.</p>
+            
+            <style>
+                .footer-grid {
+                    display: grid;
+                    grid-template-columns: 2fr 1fr 1fr 1fr;
+                    gap: 4rem;
+                    padding: 4rem 0;
+                    border-top: 1px solid rgba(255,255,255,0.1);
+                    margin-top: 5rem;
+                }
+                .footer-grid h4 {
+                    font-size: 1.25rem;
+                    color: #fff;
+                    margin-bottom: 1.5rem;
+                    position: relative;
+                    padding-bottom: 0.5rem;
+                }
+                .footer-grid h4::after {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    width: 30px;
+                    height: 2px;
+                    background: var(--color-accent);
+                }
+                .footer-links-col {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1rem;
+                }
+                .footer-links-col a {
+                    color: var(--text-secondary);
+                    text-decoration: none;
+                    transition: all 0.3s ease;
+                    font-size: 1.05rem;
+                    display: inline-block;
+                }
+                .footer-links-col a:hover {
+                    color: var(--color-accent);
+                    transform: translateX(5px);
+                }
+                .social-circle {
+                    width: 45px;
+                    height: 45px;
+                    border-radius: 50%;
+                    background: rgba(255,255,255,0.05);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: var(--text-primary);
+                    font-size: 1.25rem;
+                    transition: all 0.3s ease;
+                }
+                .social-circle:hover {
+                    background: var(--color-accent);
+                    color: #000;
+                    transform: translateY(-5px);
+                }
+                @media (max-width: 900px) {
+                    .footer-grid {
+                        grid-template-columns: 1fr 1fr;
+                        gap: 2rem;
+                    }
+                }
+                @media (max-width: 600px) {
+                    .footer-grid {
+                        grid-template-columns: 1fr;
+                        gap: 3rem;
+                    }
+                }
+            </style>
+            
+            <div class="footer-grid">
+                <!-- Brand Col -->
+                <div class="footer-brand" style="margin: 0;">
+                    <a href="index.html" class="logo" style="font-size: 2.25rem; margin-bottom: 1.5rem; display: block;">Rayvo<span style="color: var(--color-accent);">tech</span></a>
+                    <p style="color: var(--text-secondary); line-height: 1.8; max-width: 300px; margin-bottom: 2.5rem; font-size: 1.1rem;">We craft digital experiences that command attention, build trust, and drive action for ambitious brands across the US.</p>
+                    <div style="display: flex; gap: 1rem;">
+                        <a href="#" class="social-circle"><i class="ph ph-twitter-logo"></i></a>
+                        <a href="#" class="social-circle"><i class="ph ph-linkedin-logo"></i></a>
+                        <a href="#" class="social-circle"><i class="ph ph-instagram-logo"></i></a>
+                        <a href="#" class="social-circle"><i class="ph ph-dribbble-logo"></i></a>
+                    </div>
                 </div>
-                <div class="footer-links">
-                    <div class="link-group">
-                        <h4>Company</h4>
-                        <a href="about.html">About Us</a>
-                        <a href="services.html">Services</a>
-                        <a href="portfolio.html">Our Work</a>
-                        <a href="pricing.html">Pricing</a>
-                        <a href="faqs.html">FAQs</a>
-                        <a href="contact.html">Contact</a>
-                    </div>
-                    <div class="link-group">
-                        <h4>Social</h4>
-                        <a href="#">Instagram</a>
-                        <a href="#">LinkedIn</a>
-                        <a href="#">Twitter</a>
-                    </div>
+
+                <!-- Company -->
+                <div class="footer-links-col">
+                    <h4>Company</h4>
+                    <a href="about.html">About Us</a>
+                    <a href="portfolio.html">Our Work</a>
+                    <a href="pricing.html">Pricing Structure</a>
+                    <a href="faqs.html">FAQs & Support</a>
+                    <a href="contact.html">Contact Us</a>
+                </div>
+
+                <!-- Services -->
+                <div class="footer-links-col">
+                    <h4>Services</h4>
+                    <a href="service-website-design.html">Website Design</a>
+                    <a href="service-ui-ux-design.html">UI/UX Layouts</a>
+                    <a href="service-web-development.html">Web Development</a>
+                    <a href="service-seo-growth.html">SEO & Growth</a>
+                </div>
+
+                <!-- Legal -->
+                <div class="footer-links-col">
+                    <h4>Legal</h4>
+                    <a href="terms.html">Terms & Conditions</a>
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="cookies.html">Cookies Policy</a>
+                    <a href="disclaimer.html">Disclaimer</a>
                 </div>
             </div>
-            <div class="footer-legal">
-                <p>&copy; 2026 Rayvotech Digital. Built with passion.</p>
+
+            <div class="footer-legal" style="padding: 2.5rem 0; border-top: 1px solid rgba(255,255,255,0.05); color: var(--text-secondary); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1.5rem; margin-top: 2rem;">
+                <p style="margin: 0; font-size: 1rem;">&copy; 2026 Rayvotech Digital. Built with precision.</p>
+                <div style="display: flex; gap: 1.5rem; font-size: 0.95rem;">
+                    <span style="display: flex; align-items: center; gap: 0.5rem;"><i class="ph-fill ph-check-circle" style="color: var(--color-accent);"></i> Secure & Operational</span>
+                </div>
             </div>
         </div>
     </footer>

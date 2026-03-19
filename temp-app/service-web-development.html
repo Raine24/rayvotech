@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rayvotech | Custom Web Development</title>
+    <meta name="description" content="Rayvotech services include UI/UX design, custom web development, and SEO optimization.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="theme-aurora">
+    <div class="page-aurora" aria-hidden="true">
+        <div class="page-aurora-blob pa-1"></div>
+        <div class="page-aurora-blob pa-2"></div>
+        <div class="page-aurora-blob pa-3"></div>
+    </div>
+    
+    <div id="initial-loader">
+        <div class="pro-spinner"><div class="pro-spinner-inner"></div></div>
+        <div class="loader-progress-bar"></div>
+    </div>
+
+    <div class="reading-progress-container"><div class="reading-progress-bar" id="reading-progress"></div></div>
+    
+    <div class="cursor-dot" data-cursor-dot></div>
+    <div class="cursor-outline" data-cursor-outline></div>
+
+    <!-- Navigation -->
+    <nav class="navbar glass-effect">
+        <div class="nav-container container">
+            <a href="index.html" class="logo">Rayvo<span>tech</span></a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="services.html">Services</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="pricing.html">Pricing</a>
+                        <a href="faqs.html">FAQs</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <a href="hire.html" class="btn btn-primary">Hire Us</a>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="hero" id="hero" style="min-height: auto; padding-top: 10rem; padding-bottom: 3rem;">
+        <div class="container hero-content text-center">
+            <div class="y2k-badge reveal-text" style="background: rgba(2, 132, 199, 0.1); border-color: rgba(2, 132, 199, 0.3); color: #38bdf8;">WEB & APP DEVELOPMENT</div>
+            <h1 class="hero-title reveal-text delay-1" style="font-size: 5rem; line-height: 1.1;">Engineered to <br> <span class="text-gradient liquid-text" style="background: linear-gradient(to right, #38bdf8, #818cf8); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Perform.</span></h1>
+            <p class="hero-subtitle reveal-text delay-2" style="max-width: 800px; margin: 0 auto; font-size: 1.25rem;">
+                We don't just write code. We engineer digital products that perform. Design without development is just a pretty picture. At Rayvotech, we transform your approved designs into fast, scalable, and rock-solid digital products that work flawlessly in the real world.
+            </p>
+        </div>
+    </section>
+
+    <!-- Content Section -->
+    <section style="padding: 2rem 0 6rem 0;">
+        <div class="container" style="max-width: 1200px;">
+            
+            <div class="fade-up" style="max-width: 900px; margin: 0 auto 6rem auto; text-align: center;">
+                <p style="font-size: 1.35rem; line-height: 1.8; color: var(--text-secondary);">
+                    Our development team combines technical depth with creative sensibility &mdash; writing clean, maintainable code that brings your vision to life exactly as intended. From simple marketing websites to complex web applications and mobile apps, we build with precision, performance, and your long-term growth in mind.
+                </p>
+            </div>
+
+            <!-- Massive Image Showcase -->
+            <div class="fade-up delay-1" style="width: 100%; height: 600px; border-radius: 32px; overflow: hidden; margin-bottom: 8rem; box-shadow: 0 40px 100px rgba(2,132,199,0.2); border: 1px solid rgba(255,255,255,0.05); position: relative;">
+                <img src="https://i.imgur.com/vRNDwZs.jpg" alt="Web Development Architecture" style="width: 100%; height: 100%; object-fit: cover; object-position: center; transition: transform 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                <div style="position: absolute; bottom: 0; left: 0; width: 100%; height: 60%; background: linear-gradient(to top, rgba(10,10,14,1), transparent); pointer-events: none;"></div>
+                <div style="position: absolute; bottom: 3rem; left: 4rem;">
+                    <h3 style="color: #fff; font-size: 2.5rem; margin: 0; font-family: 'Space Grotesk', sans-serif;">Build For Scale.</h3>
+                </div>
+            </div>
+
+            <!-- What We Build (Asymmetrical Grid) -->
+            <div style="text-align: center; margin-bottom: 4rem;">
+                <h2 style="font-size: 3.5rem;">What We Build</h2>
+            </div>
+            
+            <div class="bento-grid fade-up delay-1" style="margin-bottom: 8rem;">
+                <!-- Full Width Feature -->
+                <div class="bento-item glass-card beam-card" style="grid-column: span 3; padding: 4rem; display: flex; flex-direction: column; justify-content: center; position: relative; overflow: hidden; border-color: rgba(56, 189, 248, 0.2);">
+                    <div style="position: absolute; top: -150px; right: -50px; width: 400px; height: 400px; background: rgba(56, 189, 248, 0.1); filter: blur(120px); border-radius: 50%;"></div>
+                    <div class="card-icon chrome-icon" style="margin-bottom: 2rem; width: 60px; height: 60px; display: flex; align-items: center; justify-content: center; font-size: 1.8rem;"><i class="ph ph-browsers"></i></div>
+                    <h3 style="font-size: 2.5rem; margin-bottom: 1.5rem;">Web Applications</h3>
+                    <p style="font-size: 1.15rem; line-height: 1.8; color: var(--text-secondary); max-width: 800px;">
+                        Beyond websites &mdash; we build powerful web applications with complex functionality, user authentication, dashboards, data management, and custom workflows tailored to your business needs. If you can imagine it, we can engineer it.
+                    </p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bento-item glass-card" style="grid-column: span 1; padding: 3rem;">
+                    <div class="card-icon gradient-icon" style="background: linear-gradient(135deg, #3b82f6, #0ea5e9); margin-bottom: 1.5rem; width: 50px; height: 50px; display: flex; align-items: center; justify-content: center; font-size: 1.5rem;"><i class="ph ph-globe"></i></div>
+                    <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">Marketing Websites</h3>
+                    <p style="font-size: 1.05rem; line-height: 1.7; color: var(--text-secondary); margin: 0;">
+                        Your brand's digital foundation. We develop fast, responsive, and SEO-optimized marketing websites that represent your business professionally and convert visitors into customers around the clock.
+                    </p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bento-item glass-card" style="grid-column: span 1; padding: 3rem;">
+                    <div class="card-icon gradient-icon" style="background: linear-gradient(135deg, #f59e0b, #eab308); margin-bottom: 1.5rem; width: 50px; height: 50px; display: flex; align-items: center; justify-content: center; font-size: 1.5rem;"><i class="ph ph-shopping-cart-simple"></i></div>
+                    <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">E-Commerce Platforms</h3>
+                    <p style="font-size: 1.05rem; line-height: 1.7; color: var(--text-secondary); margin: 0;">
+                        We develop online stores built to scale &mdash; with seamless product management, secure payment gateways, inventory systems, and optimized checkout flows that maximize every sale opportunity.
+                    </p>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="bento-item glass-card" style="grid-column: span 1; padding: 3rem;">
+                    <div class="card-icon gradient-icon" style="background: linear-gradient(135deg, #8b5cf6, #d946ef); margin-bottom: 1.5rem; width: 50px; height: 50px; display: flex; align-items: center; justify-content: center; font-size: 1.5rem;"><i class="ph ph-device-mobile"></i></div>
+                    <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">Mobile Applications</h3>
+                    <p style="font-size: 1.05rem; line-height: 1.7; color: var(--text-secondary); margin: 0;">
+                        Your users live on their phones. We build native-feeling iOS and Android applications with smooth performance, intuitive interfaces, and deep functionality that keeps users engaged.
+                    </p>
+                </div>
+
+                <!-- Card 5 (Span 2) -->
+                <div class="bento-item glass-card" style="grid-column: span 2; padding: 3rem; background: linear-gradient(135deg, rgba(255,255,255,0.02), rgba(56, 189, 248, 0.05));">
+                    <div class="card-icon chrome-icon" style="margin-bottom: 1.5rem; width: 50px; height: 50px; display: flex; align-items: center; justify-content: center; font-size: 1.5rem;"><i class="ph ph-plugs-connected"></i></div>
+                    <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">API & CMS Integrations</h3>
+                    <p style="font-size: 1.05rem; line-height: 1.7; color: var(--text-secondary); margin: 0;">
+                        We connect your digital product to CRMs, payment processors, and entirely headless CMS systems (Sanity, Contentful, WordPress). Your tech stack should work together seamlessly, and we give your team the limitless ability to manage content without touching code.
+                    </p>
+                </div>
+            </div>
+
+            <!-- THE TECH STACK (Code Terminal/Neon Array) -->
+            <div class="fade-up" style="margin-bottom: 8rem;">
+                <div class="glass-card beam-card" style="padding: 5rem; border-radius: 32px; background: rgba(5,5,10,0.8); border: 1px solid rgba(56, 189, 248, 0.2); position: relative; overflow: hidden;">
+                    <div style="position: absolute; top: -200px; left: 50%; transform: translateX(-50%); width: 800px; height: 400px; background: radial-gradient(circle, rgba(56,189,248,0.15) 0%, transparent 70%); pointer-events: none;"></div>
+                    
+                    <div style="text-align: center; margin-bottom: 4rem; position: relative; z-index: 2;">
+                        <h2 style="font-size: 3.5rem; margin-bottom: 1rem;">Our Tech Stack</h2>
+                        <p style="font-size: 1.25rem; color: var(--text-secondary); max-width: 700px; margin: 0 auto;">We work with modern, battle-tested technologies chosen for performance, scalability, and long-term maintainability.</p>
+                    </div>
+
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 3rem; position: relative; z-index: 2;">
+                        
+                        <!-- Frontend -->
+                        <div>
+                            <h4 style="color: #38bdf8; font-family: 'Space Grotesk', sans-serif; font-size: 1.1rem; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 1.5rem; border-bottom: 1px solid rgba(56,189,248,0.3); padding-bottom: 0.5rem;">Frontend</h4>
+                            <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.75rem; color: #cbd5e1; font-family: monospace; font-size: 1rem;">
+                                <li>&rsaquo; React & Next.js</li>
+                                <li>&rsaquo; Tailwind CSS</li>
+                                <li>&rsaquo; Framer Motion</li>
+                                <li>&rsaquo; TypeScript</li>
+                                <li>&rsaquo; HTML5 & CSS3</li>
+                            </ul>
+                        </div>
+
+                        <!-- Backend -->
+                        <div>
+                            <h4 style="color: #10b981; font-family: 'Space Grotesk', sans-serif; font-size: 1.1rem; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 1.5rem; border-bottom: 1px solid rgba(16,185,129,0.3); padding-bottom: 0.5rem;">Backend</h4>
+                            <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.75rem; color: #cbd5e1; font-family: monospace; font-size: 1rem;">
+                                <li>&rsaquo; Node.js & Express</li>
+                                <li>&rsaquo; Python & Django</li>
+                                <li>&rsaquo; REST APIs</li>
+                                <li>&rsaquo; GraphQL</li>
+                                <li>&rsaquo; Postgres & MongoDB</li>
+                            </ul>
+                        </div>
+
+                        <!-- Mobile & CMS -->
+                        <div>
+                            <h4 style="color: #f43f5e; font-family: 'Space Grotesk', sans-serif; font-size: 1.1rem; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 1.5rem; border-bottom: 1px solid rgba(244,63,94,0.3); padding-bottom: 0.5rem;">Mobile / CMS</h4>
+                            <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.75rem; color: #cbd5e1; font-family: monospace; font-size: 1rem;">
+                                <li>&rsaquo; React Native</li>
+                                <li>&rsaquo; iOS & Android</li>
+                                <li>&rsaquo; WordPress & Webflow</li>
+                                <li>&rsaquo; Shopify</li>
+                                <li>&rsaquo; Sanity & Contentful</li>
+                            </ul>
+                        </div>
+
+                        <!-- DevOps -->
+                        <div>
+                            <h4 style="color: #f59e0b; font-family: 'Space Grotesk', sans-serif; font-size: 1.1rem; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 1.5rem; border-bottom: 1px solid rgba(245,158,11,0.3); padding-bottom: 0.5rem;">DevOps</h4>
+                            <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.75rem; color: #cbd5e1; font-family: monospace; font-size: 1rem;">
+                                <li>&rsaquo; Vercel & Netlify</li>
+                                <li>&rsaquo; AWS</li>
+                                <li>&rsaquo; Google Cloud</li>
+                                <li>&rsaquo; GitHub CI/CD</li>
+                                <li>&rsaquo; Docker</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Development Standards -->
+            <div class="fade-up" style="margin-bottom: 8rem;">
+                <h2 style="font-size: 3rem; text-align: center; margin-bottom: 3rem;">Our Development Standards</h2>
+                
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1px; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.05); border-radius: 24px; overflow: hidden;">
+                    
+                    <div style="background: rgba(10,10,14,0.9); padding: 3rem; position: relative;">
+                        <h4 style="font-size: 1.25rem; color: var(--text-primary); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.75rem;"><i class="ph ph-code" style="color: #38bdf8;"></i> Clean Code</h4>
+                        <p style="color: var(--text-secondary); line-height: 1.6; margin: 0;">We write code that is readable, well-documented, and built to last. No spaghetti code, no shortcuts, no technical debt handed off to your team.</p>
+                    </div>
+                    
+                    <div style="background: rgba(10,10,14,0.9); padding: 3rem;">
+                        <h4 style="font-size: 1.25rem; color: var(--text-primary); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.75rem;"><i class="ph ph-lightning" style="color: #eab308;"></i> Performance First</h4>
+                        <p style="color: var(--text-secondary); line-height: 1.6; margin: 0;">Every product we build is optimized for speed &mdash; fast load times, efficient database queries, optimized assets, and infrastructure that handles traffic spikes.</p>
+                    </div>
+
+                    <div style="background: rgba(10,10,14,0.9); padding: 3rem;">
+                        <h4 style="font-size: 1.25rem; color: var(--text-primary); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.75rem;"><i class="ph ph-shield-check" style="color: #10b981;"></i> Security Built In</h4>
+                        <p style="color: var(--text-secondary); line-height: 1.6; margin: 0;">Security is never an afterthought. We follow industry best practices for data protection, authentication, input validation, and secure API communication from day one.</p>
+                    </div>
+
+                    <div style="background: rgba(10,10,14,0.9); padding: 3rem;">
+                        <h4 style="font-size: 1.25rem; color: var(--text-primary); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.75rem;"><i class="ph ph-trend-up" style="color: #a855f7;"></i> Scalability By Design</h4>
+                        <p style="color: var(--text-secondary); line-height: 1.6; margin: 0;">We architect your product to grow with your business. Whether you go from 100 to 100,000 users, your foundation will hold.</p>
+                    </div>
+
+                    <div style="background: rgba(10,10,14,0.9); padding: 3rem; grid-column: auto;">
+                        <h4 style="font-size: 1.25rem; color: var(--text-primary); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.75rem;"><i class="ph ph-devices" style="color: #f43f5e;"></i> Cross-Browser Testing</h4>
+                        <p style="color: var(--text-secondary); line-height: 1.6; margin: 0;">Every product we ship is rigorously tested across browsers, devices, and operating systems &mdash; because your users don't all use the same setup.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Two Column: Process & What You Get -->
+            <div class="fade-up" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(450px, 1fr)); gap: 4rem; margin-bottom: 8rem;">
+                <!-- Process -->
+                <div>
+                    <h2 style="font-size: 2.5rem; margin-bottom: 2rem;">Our Process</h2>
+                    <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 1.5rem;">
+                        <li style="display: flex; gap: 1.5rem; align-items: flex-start;">
+                            <div style="width: 40px; height: 40px; border-radius: 50%; background: rgba(56,189,248,0.1); color: #38bdf8; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0; border: 1px solid rgba(56,189,248,0.3);">1</div>
+                            <div>
+                                <strong style="display: block; font-size: 1.15rem; margin-bottom: 0.25rem;">Discovery & Architecture</strong>
+                                <span style="color: var(--text-secondary); line-height: 1.6;">We audit requirements, define technical scope, choose the stack, and plan the database schema before writing code.</span>
+                            </div>
+                        </li>
+                        <li style="display: flex; gap: 1.5rem; align-items: flex-start;">
+                            <div style="width: 40px; height: 40px; border-radius: 50%; background: rgba(56,189,248,0.1); color: #38bdf8; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0; border: 1px solid rgba(56,189,248,0.3);">2</div>
+                            <div>
+                                <strong style="display: block; font-size: 1.15rem; margin-bottom: 0.25rem;">Development</strong>
+                                <span style="color: var(--text-secondary); line-height: 1.6;">We build in focused sprints with regular updates and demos so you're never left in the dark.</span>
+                            </div>
+                        </li>
+                        <li style="display: flex; gap: 1.5rem; align-items: flex-start;">
+                            <div style="width: 40px; height: 40px; border-radius: 50%; background: rgba(56,189,248,0.1); color: #38bdf8; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0; border: 1px solid rgba(56,189,248,0.3);">3</div>
+                            <div>
+                                <strong style="display: block; font-size: 1.15rem; margin-bottom: 0.25rem;">Quality Assurance</strong>
+                                <span style="color: var(--text-secondary); line-height: 1.6;">We test everything &mdash; functionality, performance, security, and compatibility &mdash; before it goes live.</span>
+                            </div>
+                        </li>
+                        <li style="display: flex; gap: 1.5rem; align-items: flex-start;">
+                            <div style="width: 40px; height: 40px; border-radius: 50%; background: rgba(56,189,248,0.1); color: #38bdf8; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0; border: 1px solid rgba(56,189,248,0.3);">4</div>
+                            <div>
+                                <strong style="display: block; font-size: 1.15rem; margin-bottom: 0.25rem;">Launch & Support</strong>
+                                <span style="color: var(--text-secondary); line-height: 1.6;">We deploy with zero-downtime releases and stay on hand post-launch to squash bugs and keep things smooth.</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- What You Get -->
+                <div class="glass-card" style="padding: 3rem; background: rgba(255,255,255,0.02); border-color: rgba(56, 189, 248, 0.2);">
+                    <h2 style="font-size: 2.5rem; margin-bottom: 2rem;">What You Get</h2>
+                    <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 1.25rem; font-size: 1.1rem; color: var(--text-primary);">
+                        <li style="display: flex; align-items: center; gap: 1rem;"><i class="ph ph-check-circle" style="color: #38bdf8; font-size: 1.5rem;"></i> Production-ready, clean and documented code</li>
+                        <li style="display: flex; align-items: center; gap: 1rem;"><i class="ph ph-check-circle" style="color: #38bdf8; font-size: 1.5rem;"></i> Fully responsive across all devices and browsers</li>
+                        <li style="display: flex; align-items: center; gap: 1rem;"><i class="ph ph-check-circle" style="color: #38bdf8; font-size: 1.5rem;"></i> Performance and speed optimized</li>
+                        <li style="display: flex; align-items: center; gap: 1rem;"><i class="ph ph-check-circle" style="color: #38bdf8; font-size: 1.5rem;"></i> Security best practices throughout</li>
+                        <li style="display: flex; align-items: center; gap: 1rem;"><i class="ph ph-check-circle" style="color: #38bdf8; font-size: 1.5rem;"></i> Third-party integrations and API connections</li>
+                        <li style="display: flex; align-items: center; gap: 1rem;"><i class="ph ph-check-circle" style="color: #38bdf8; font-size: 1.5rem;"></i> CMS setup for easy content management</li>
+                        <li style="display: flex; align-items: center; gap: 1rem;"><i class="ph ph-check-circle" style="color: #38bdf8; font-size: 1.5rem;"></i> Full handoff with documentation</li>
+                        <li style="display: flex; align-items: center; gap: 1rem;"><i class="ph ph-check-circle" style="color: #38bdf8; font-size: 1.5rem;"></i> Post-launch support on every package</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Why Us / CTA -->
+            <div class="glass-card fade-up" style="padding: 6rem; text-align: center; background: linear-gradient(135deg, rgba(56, 189, 248, 0.08), rgba(2, 132, 199, 0.08)); border-radius: 32px; border: 1px solid rgba(56, 189, 248, 0.1); position: relative; overflow: hidden;">
+                <h2 style="font-size: 3.5rem; margin-bottom: 2rem;">Why Rayvotech</h2>
+                <p style="font-size: 1.35rem; line-height: 1.8; color: var(--text-secondary); max-width: 900px; margin: 0 auto 2rem auto;">
+                    We've seen what happens when businesses cut corners on development &mdash; slow websites, broken features, security vulnerabilities, and codebases that nobody can maintain. That's not what we do. At Rayvotech, every product we ship reflects our commitment to quality, performance, and craft.
+                </p>
+                <p style="font-size: 1.35rem; color: var(--text-primary); font-weight: 500; margin-bottom: 4rem;">
+                    We take pride in building things that work &mdash; beautifully and reliably &mdash; for the businesses and users who depend on them every day.
+                </p>
+                
+                <h3 style="font-size: 2.5rem; margin-bottom: 1rem; color: #38bdf8;">Ready to build your next digital product?</h3>
+                <p style="color: var(--text-secondary); font-size: 1.35rem; margin-bottom: 3.5rem;">Let's turn your idea into something the internet hasn't seen before.</p>
+                
+                <a href="hire.html" class="btn btn-primary btn-lg" style="padding: 1.25rem 3rem; font-size: 1.25rem; border-radius: 50px; background: #38bdf8; color: #000; border: none;">Start Your Project &rarr;</a>
+            </div>
+
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="footer" id="contact" style="padding-top: 5rem;">
+        <div class="container">
+            <div class="massive-cta fade-up">
+                <div class="cta-content">
+                    <h2 style="color: var(--text-inverse); font-size: 4rem;">Let's Build Something <br> <span style="font-style: italic; color: #a855f7;">Legendary.</span></h2>
+                    <p style="color: var(--color-dominant); font-weight:600; margin-top: 1.5rem; font-size: 1.25rem;">
+                        We're a team of designers, developers, and digital strategists who wake up every day excited to solve hard problems and build things that matter.
+                    </p>
+                    <p style="color: var(--color-dominant); font-weight:400; margin-top: 1rem; font-size: 1.1rem; max-width: 700px; margin-left: auto; margin-right: auto;">
+                        If you're ready to take your digital presence to the next level, we're ready to make it happen.<br>
+                        <strong>Rayvotech — Smart. Fast. Creative.</strong>
+                    </p>
+                </div>
+                <div class="cta-action" style="margin-top: 3rem;">
+                    <a href="hire.html" class="btn btn-outline btn-lg" style="border-color: var(--color-dominant); color: var(--color-dominant);">Start the Conversation <i class="ph ph-arrow-right"></i></a>
+                </div>
+            </div>
+            
+            
+            <style>
+                .footer-grid {
+                    display: grid;
+                    grid-template-columns: 2fr 1fr 1fr 1fr;
+                    gap: 4rem;
+                    padding: 4rem 0;
+                    border-top: 1px solid rgba(255,255,255,0.1);
+                    margin-top: 5rem;
+                }
+                .footer-grid h4 {
+                    font-size: 1.25rem;
+                    color: #fff;
+                    margin-bottom: 1.5rem;
+                    position: relative;
+                    padding-bottom: 0.5rem;
+                }
+                .footer-grid h4::after {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    width: 30px;
+                    height: 2px;
+                    background: var(--color-accent);
+                }
+                .footer-links-col {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1rem;
+                }
+                .footer-links-col a {
+                    color: var(--text-secondary);
+                    text-decoration: none;
+                    transition: all 0.3s ease;
+                    font-size: 1.05rem;
+                    display: inline-block;
+                }
+                .footer-links-col a:hover {
+                    color: var(--color-accent);
+                    transform: translateX(5px);
+                }
+                .social-circle {
+                    width: 45px;
+                    height: 45px;
+                    border-radius: 50%;
+                    background: rgba(255,255,255,0.05);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: var(--text-primary);
+                    font-size: 1.25rem;
+                    transition: all 0.3s ease;
+                }
+                .social-circle:hover {
+                    background: var(--color-accent);
+                    color: #000;
+                    transform: translateY(-5px);
+                }
+                @media (max-width: 900px) {
+                    .footer-grid {
+                        grid-template-columns: 1fr 1fr;
+                        gap: 2rem;
+                    }
+                }
+                @media (max-width: 600px) {
+                    .footer-grid {
+                        grid-template-columns: 1fr;
+                        gap: 3rem;
+                    }
+                }
+            </style>
+            
+            <div class="footer-grid">
+                <!-- Brand Col -->
+                <div class="footer-brand" style="margin: 0;">
+                    <a href="index.html" class="logo" style="font-size: 2.25rem; margin-bottom: 1.5rem; display: block;">Rayvo<span style="color: var(--color-accent);">tech</span></a>
+                    <p style="color: var(--text-secondary); line-height: 1.8; max-width: 300px; margin-bottom: 2.5rem; font-size: 1.1rem;">We craft digital experiences that command attention, build trust, and drive action for ambitious brands across the US.</p>
+                    <div style="display: flex; gap: 1rem;">
+                        <a href="#" class="social-circle"><i class="ph ph-twitter-logo"></i></a>
+                        <a href="#" class="social-circle"><i class="ph ph-linkedin-logo"></i></a>
+                        <a href="#" class="social-circle"><i class="ph ph-instagram-logo"></i></a>
+                        <a href="#" class="social-circle"><i class="ph ph-dribbble-logo"></i></a>
+                    </div>
+                </div>
+
+                <!-- Company -->
+                <div class="footer-links-col">
+                    <h4>Company</h4>
+                    <a href="about.html">About Us</a>
+                    <a href="portfolio.html">Our Work</a>
+                    <a href="pricing.html">Pricing Structure</a>
+                    <a href="faqs.html">FAQs & Support</a>
+                    <a href="contact.html">Contact Us</a>
+                </div>
+
+                <!-- Services -->
+                <div class="footer-links-col">
+                    <h4>Services</h4>
+                    <a href="service-website-design.html">Website Design</a>
+                    <a href="service-ui-ux-design.html">UI/UX Layouts</a>
+                    <a href="service-web-development.html">Web Development</a>
+                    <a href="service-seo-growth.html">SEO & Growth</a>
+                </div>
+
+                <!-- Legal -->
+                <div class="footer-links-col">
+                    <h4>Legal</h4>
+                    <a href="terms.html">Terms & Conditions</a>
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="cookies.html">Cookies Policy</a>
+                    <a href="disclaimer.html">Disclaimer</a>
+                </div>
+            </div>
+
+            <div class="footer-legal" style="padding: 2.5rem 0; border-top: 1px solid rgba(255,255,255,0.05); color: var(--text-secondary); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1.5rem; margin-top: 2rem;">
+                <p style="margin: 0; font-size: 1rem;">&copy; 2026 Rayvotech Digital. Built with precision.</p>
+                <div style="display: flex; gap: 1.5rem; font-size: 0.95rem;">
+                    <span style="display: flex; align-items: center; gap: 0.5rem;"><i class="ph-fill ph-check-circle" style="color: var(--color-accent);"></i> Secure & Operational</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
