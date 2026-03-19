@@ -408,7 +408,7 @@ input:focus, textarea:focus {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 3.5rem;
+    padding-top: 8rem;
     padding-bottom: 1rem;
     background: transparent;
 }
@@ -1167,7 +1167,7 @@ input:focus, textarea:focus {
     body { cursor: auto; }
 
     /* Hero Section — Mobile Responsive */
-    .hero { padding-top: 3rem; padding-bottom: 1rem; min-height: 100svh; }
+    .hero { padding-top: 7rem; padding-bottom: 1rem; min-height: 100svh; }
     h1 { font-size: clamp(2.2rem, 7vw, 3.5rem); }
     .y2k-badge { font-size: 0.6rem; padding: 0.35rem 1rem; margin-bottom: 1rem; }
     .hero-subtitle { font-size: 0.95rem; margin-bottom: 1.5rem; }
