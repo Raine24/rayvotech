@@ -12,7 +12,7 @@
     <!-- Phosphor Icons -->
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
     <!-- Styles -->
-    <link rel="stylesheet" href="style.css?v=5">
+    <link rel="stylesheet" href="style.css?v=7">
 </head>
 <body class="theme-aurora">
     <!-- Global Page Aurora (Fixed, persists across ALL sections) -->
@@ -271,59 +271,62 @@
     </section>
 
     <!-- Process Breakdown Redesign -->
-    <section class="process awwwards-process section-padding" id="process">
-        <div class="container">
-            <div class="section-header text-center fade-up" style="margin-bottom: 5rem;">
-                <span class="section-tag">Our Approach</span>
-                <h2 style="font-size: clamp(2.8rem, 5vw, 4rem); letter-spacing: -1px; margin-top: 1rem;">How We Build <br> <span class="text-gradient">Exceptional Brands</span></h2>
-            </div>
+    <section class="process split-process section-padding" id="process">
+        <div class="container split-container">
             
-            <div class="awwwards-process-grid">
+            <!-- Left Column: Visual & Header -->
+            <div class="process-visual-col fade-up">
+                <div class="section-header" style="margin-bottom: 3rem;">
+                    <span class="section-tag">Our Approach</span>
+                    <h2 style="font-size: clamp(2.5rem, 4vw, 3.5rem); letter-spacing: -1px; margin-top: 1rem;">How We Build <br> <span class="text-gradient">Exceptional Brands</span></h2>
+                </div>
+                
+                <div class="process-shaped-frame">
+                    <!-- High-end abstract image serving as the visual anchor -->
+                    <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=2000&auto=format&fit=crop" alt="Digital creation process" />
+                    <div class="frame-glass-overlay"></div>
+                    <div class="frame-border-glow"></div>
+                </div>
+            </div>
+
+            <!-- Right Column: Vertical Timeline -->
+            <div class="process-timeline-col">
+                <div class="vertical-connector-track">
+                    <div class="vertical-connector-fill" id="process-progress"></div>
+                </div>
                 
                 <!-- Step 1 -->
-                <div class="process-card fade-up glass-card delay-1 span-2">
-                    <div class="p-card-bg-number">01</div>
-                    <div class="p-card-content">
-                        <div class="p-card-header">
-                            <div class="p-icon-box"><i class="ph ph-compass-tool"></i></div>
-                            <h3>Discover & Strategy</h3>
-                        </div>
+                <div class="v-step-item fade-up delay-1">
+                    <div class="v-step-node"></div>
+                    <div class="v-step-content">
+                        <h3 class="v-step-title"><span class="v-step-num">01.</span> Discover & Strategy</h3>
                         <p>We dive deep into your brand, understanding your goals, audience, and market to craft a tailored digital strategy. We lay the foundation for success.</p>
                     </div>
                 </div>
 
                 <!-- Step 2 -->
-                <div class="process-card fade-up glass-card delay-2">
-                    <div class="p-card-bg-number">02</div>
-                    <div class="p-card-content">
-                        <div class="p-card-header">
-                            <div class="p-icon-box"><i class="ph ph-bezier-curve"></i></div>
-                            <h3>Design & Prototyping</h3>
-                        </div>
+                <div class="v-step-item fade-up delay-2">
+                    <div class="v-step-node"></div>
+                    <div class="v-step-content">
+                        <h3 class="v-step-title"><span class="v-step-num">02.</span> Design & Prototyping</h3>
                         <p>Our creative team brings concepts to life with wireframes and interactive prototypes, focusing on user experience, aesthetics, and brand alignment.</p>
                     </div>
                 </div>
 
                 <!-- Step 3 -->
-                <div class="process-card fade-up glass-card delay-3">
-                    <div class="p-card-bg-number">03</div>
-                    <div class="p-card-content">
-                        <div class="p-card-header">
-                            <div class="p-icon-box"><i class="ph ph-code-block"></i></div>
-                            <h3>Development & SEO</h3>
-                        </div>
+                <div class="v-step-item fade-up delay-3">
+                    <div class="v-step-node"></div>
+                    <div class="v-step-content">
+                        <h3 class="v-step-title"><span class="v-step-num">03.</span> Development & SEO</h3>
                         <p>We build robust, scalable platforms using cutting-edge tech. Simultaneously, we implement advanced SEO strategies to ensure you rank high.</p>
                     </div>
                 </div>
 
                 <!-- Step 4 -->
-                <div class="process-card fade-up glass-card delay-4 span-2">
-                    <div class="p-card-bg-number">04</div>
-                    <div class="p-card-content">
-                        <div class="p-card-header">
-                            <div class="p-icon-box"><i class="ph ph-rocket-launch"></i></div>
-                            <h3>Launch & Scale</h3>
-                        </div>
+                <div class="v-step-item fade-up delay-4">
+                    <div class="v-step-node"></div>
+                    <div class="v-step-content">
+                        <h3 class="v-step-title"><span class="v-step-num">04.</span> Launch & Scale</h3>
                         <p>Rigorous testing precedes the launch. Once live, we monitor performance, gather data, and continuously optimize for better conversion rates.</p>
                     </div>
                 </div>
