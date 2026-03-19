@@ -33,9 +33,13 @@
         <div class="nav-container container">
             <a href="index.html" class="logo">Rayvo<span>tech</span></a>
             <div class="nav-links">
+                <a href="index.html">Home</a>
                 <a href="about.html">About Us</a>
                 <a href="services.html">Services</a>
                 <a href="portfolio.html">Portfolio</a>
+                <a href="pricing.html">Pricing</a>
+                        <a href="faqs.html">FAQs</a>
+                <a href="contact.html">Contact</a>
             </div>
             <a href="hire.html" class="btn btn-primary">Hire Us</a>
         </div>
@@ -52,60 +56,188 @@
 
     <!-- Services Detailed -->
     <section class="section-padding">
-        <div class="container">
-            <div class="bento-grid">
-                
-                <div class="bento-item wide-card beam-card fade-up glass-card" style="padding: 4rem;">
-                    <div class="beam-border"></div>
-                    <div style="flex:1;">
-                        <div class="card-icon" style="font-size: 3rem; margin-bottom: 1.5rem;"><i class="ph ph-paint-brush"></i></div>
-                        <h3 style="font-size: 2rem;">UI/UX Design</h3>
-                        <p class="card-desc" style="font-size: 1.1rem; max-width: 600px;">We craft intuitive, high-converting interfaces. From strategic wireframing to pixel-perfect high-fidelity mockups, our designs ensure a flawless user journey that delights your audience.</p>
-                        <ul style="margin-top:2rem; list-style:none; color: var(--text-secondary); display:grid; gap:0.5rem;">
-                            <li><i class="ph-fill ph-check-circle" style="color:var(--color-accent); margin-right:0.5rem;"></i> User Research & Persona Creation</li>
-                            <li><i class="ph-fill ph-check-circle" style="color:var(--color-accent); margin-right:0.5rem;"></i> Wireframing & Interactive Prototyping</li>
-                            <li><i class="ph-fill ph-check-circle" style="color:var(--color-accent); margin-right:0.5rem;"></i> Design Systems & Brand Guidelines</li>
-                        </ul>
+        <div class="container" style="max-width: 1100px;">
+            
+            <!-- Service 0: Website Design -->
+            <div class="flat-card beam-card fade-up glass-card" style="padding: 0; overflow: hidden; display: flex; flex-direction: column; gap: 0; margin-bottom: 3rem; border-radius: 24px;">
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));">
+                    <!-- Left Side: Pitch -->
+                    <div style="padding: 4rem; position: relative;">
+                        <div style="position:absolute; top:-50px; left:-50px; width:200px; height:200px; background:#f43f5e; filter:blur(100px); opacity:0.1; border-radius:50%; pointer-events:none;"></div>
+                        <div class="card-icon gradient-icon" style="background: linear-gradient(135deg, #f43f5e, #fb923c); box-shadow: 0 10px 20px rgba(244, 63, 94, 0.2);"><i class="ph ph-desktop"></i></div>
+                        <h3 style="font-size: 2.25rem; margin-bottom: 1.5rem;">Website Design</h3>
+                        <p class="card-desc" style="font-size: 1.15rem; line-height: 1.8;">We design world-class, premium websites that capture your brand's essence. Blending striking visuals with strategic user journeys, we build tailored experiences that instantly build trust and compel your visitors to act.</p>
                     </div>
-                </div>
 
-                <div class="bento-item wide-card fade-up delay-1 glass-card" style="padding: 4rem;">
-                    <div style="flex:1;">
-                        <div class="card-icon" style="font-size: 3rem; margin-bottom: 1.5rem;"><i class="ph ph-code"></i></div>
-                        <h3 style="font-size: 2rem;">Custom Web Development</h3>
-                        <p class="card-desc" style="font-size: 1.1rem; max-width: 600px;">Fast, secure, and infinitely scalable. We build web applications and corporate sites using robust modern stacks, explicitly tailored to handle traffic and deliver premium performance.</p>
-                        <ul style="margin-top:2rem; list-style:none; color: var(--text-secondary); display:grid; gap:0.5rem;">
-                            <li><i class="ph-fill ph-check-circle" style="color:var(--color-accent); margin-right:0.5rem;"></i> Full-Stack Development (React, Next.js)</li>
-                            <li><i class="ph-fill ph-check-circle" style="color:var(--color-accent); margin-right:0.5rem;"></i> E-Commerce Solutions (Shopify, Custom Cart)</li>
-                            <li><i class="ph-fill ph-check-circle" style="color:var(--color-accent); margin-right:0.5rem;"></i> CMS Integration (WordPress, Sanity CRM)</li>
+                    <!-- Right Side: Deliverables -->
+                    <div style="background: rgba(10,10,14,0.5); padding: 4rem; border-left: 1px solid rgba(255,255,255,0.05); display: flex; flex-direction: column; justify-content: center;">
+                        <h4 style="color: var(--color-accent); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 2.5rem;">Deliverables</h4>
+                        <ul style="list-style:none; color: var(--text-secondary); display:flex; flex-direction: column; gap: 2rem;">
+                            <li style="display: flex; align-items: flex-start; gap: 1.25rem;">
+                                <div class="card-icon chrome-icon" style="margin: 0; width: 44px; height: 44px; font-size: 1.25rem; flex-shrink: 0;"><i class="ph ph-layout"></i></div>
+                                <div>
+                                    <strong style="color: var(--text-primary); display: block; margin-bottom: 0.25rem; font-size: 1.1rem;">Custom Layouts & Graphics</strong>
+                                    <span style="font-size: 0.95rem; line-height: 1.5; display: block;">100% bespoke design crafted to match your unique brand identity.</span>
+                                </div>
+                            </li>
+                            <li style="display: flex; align-items: flex-start; gap: 1.25rem;">
+                                <div class="card-icon chrome-icon" style="margin: 0; width: 44px; height: 44px; font-size: 1.25rem; flex-shrink: 0;"><i class="ph ph-device-mobile"></i></div>
+                                <div>
+                                    <strong style="color: var(--text-primary); display: block; margin-bottom: 0.25rem; font-size: 1.1rem;">Responsive Web Design</strong>
+                                    <span style="font-size: 0.95rem; line-height: 1.5; display: block;">Flawless scaling and operation across desktop, tablet, and mobile.</span>
+                                </div>
+                            </li>
+                            <li style="display: flex; align-items: flex-start; gap: 1.25rem;">
+                                <div class="card-icon chrome-icon" style="margin: 0; width: 44px; height: 44px; font-size: 1.25rem; flex-shrink: 0;"><i class="ph ph-sparkle"></i></div>
+                                <div>
+                                    <strong style="color: var(--text-primary); display: block; margin-bottom: 0.25rem; font-size: 1.1rem;">Brand Strategy Integration</strong>
+                                    <span style="font-size: 0.95rem; line-height: 1.5; display: block;">Aligning visual elements with your company's core messaging and voice.</span>
+                                </div>
+                            </li>
                         </ul>
                     </div>
                 </div>
-                
-                <div class="bento-item wide-card fade-up delay-2 glass-card" style="padding: 4rem;">
-                    <div style="flex:1;">
-                        <div class="card-icon" style="font-size: 3rem; margin-bottom: 1.5rem;"><i class="ph ph-magnifying-glass"></i></div>
-                        <h3 style="font-size: 2rem;">SEO & Growth</h3>
-                        <p class="card-desc" style="font-size: 1.1rem; max-width: 600px;">Beautiful websites are useless if no one sees them. Our data-driven SEO strategies push your brand to the top of search results and significantly drive organic, convertible traffic.</p>
-                        <ul style="margin-top:2rem; list-style:none; color: var(--text-secondary); display:grid; gap:0.5rem;">
-                            <li><i class="ph-fill ph-check-circle" style="color:var(--color-accent); margin-right:0.5rem;"></i> Technical SEO Audits & Fixes</li>
-                            <li><i class="ph-fill ph-check-circle" style="color:var(--color-accent); margin-right:0.5rem;"></i> Targeted Keyword Strategy & Content</li>
-                            <li><i class="ph-fill ph-check-circle" style="color:var(--color-accent); margin-right:0.5rem;"></i> Conversion Rate Optimization (CRO)</li>
-                        </ul>
-                    </div>
-                </div>
-
             </div>
+
+            <!-- Service 1: UI/UX Design -->
+            <div class="flat-card beam-card fade-up delay-1 glass-card" style="padding: 0; overflow: hidden; display: flex; flex-direction: column; gap: 0; margin-bottom: 3rem; border-radius: 24px;">
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));">
+                    <!-- Left Side: Pitch -->
+                    <div style="padding: 4rem; position: relative;">
+                        <div style="position:absolute; top:-50px; left:-50px; width:200px; height:200px; background:#FF5F56; filter:blur(100px); opacity:0.1; border-radius:50%; pointer-events:none;"></div>
+                        <div class="card-icon gradient-icon" style="background: linear-gradient(135deg, #FF5F56, #f59e0b); box-shadow: 0 10px 20px rgba(255, 95, 86, 0.2);"><i class="ph ph-paint-brush"></i></div>
+                        <h3 style="font-size: 2.25rem; margin-bottom: 1.5rem;">UI/UX Design</h3>
+                        <p class="card-desc" style="font-size: 1.15rem; line-height: 1.8;">We craft intuitive, high-converting interfaces. From strategic wireframing to pixel-perfect high-fidelity mockups, our designs ensure a flawless user journey that delights your audience and elevates your brand's digital presence.</p>
+                    </div>
+
+                    <!-- Right Side: Deliverables -->
+                    <div style="background: rgba(10,10,14,0.5); padding: 4rem; border-left: 1px solid rgba(255,255,255,0.05); display: flex; flex-direction: column; justify-content: center;">
+                        <h4 style="color: var(--color-accent); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 2.5rem;">Deliverables</h4>
+                        <ul style="list-style:none; color: var(--text-secondary); display:flex; flex-direction: column; gap: 2rem;">
+                            <li style="display: flex; align-items: flex-start; gap: 1.25rem;">
+                                <div class="card-icon chrome-icon" style="margin: 0; width: 44px; height: 44px; font-size: 1.25rem; flex-shrink: 0;"><i class="ph ph-users"></i></div>
+                                <div>
+                                    <strong style="color: var(--text-primary); display: block; margin-bottom: 0.25rem; font-size: 1.1rem;">User Research & Persona Build</strong>
+                                    <span style="font-size: 0.95rem; line-height: 1.5; display: block;">Deep dive into audience behavior and psychological triggers.</span>
+                                </div>
+                            </li>
+                            <li style="display: flex; align-items: flex-start; gap: 1.25rem;">
+                                <div class="card-icon chrome-icon" style="margin: 0; width: 44px; height: 44px; font-size: 1.25rem; flex-shrink: 0;"><i class="ph ph-blueprint"></i></div>
+                                <div>
+                                    <strong style="color: var(--text-primary); display: block; margin-bottom: 0.25rem; font-size: 1.1rem;">Wireframing & Action Prototyping</strong>
+                                    <span style="font-size: 0.95rem; line-height: 1.5; display: block;">Clickable architectural blueprints of your future website.</span>
+                                </div>
+                            </li>
+                            <li style="display: flex; align-items: flex-start; gap: 1.25rem;">
+                                <div class="card-icon chrome-icon" style="margin: 0; width: 44px; height: 44px; font-size: 1.25rem; flex-shrink: 0;"><i class="ph ph-swatches"></i></div>
+                                <div>
+                                    <strong style="color: var(--text-primary); display: block; margin-bottom: 0.25rem; font-size: 1.1rem;">Design Systems</strong>
+                                    <span style="font-size: 0.95rem; line-height: 1.5; display: block;">Scalable, consistent component libraries aligned with your brand guidelines.</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service 2: Web Dev -->
+            <div class="flat-card beam-card fade-up delay-1 glass-card" style="padding: 0; overflow: hidden; display: flex; flex-direction: column; gap: 0; margin-bottom: 3rem; border-radius: 24px;">
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));">
+                    <!-- Left Side: Pitch -->
+                    <div style="padding: 4rem; position: relative;">
+                        <div style="position:absolute; top:-50px; left:-50px; width:200px; height:200px; background:#0284c7; filter:blur(100px); opacity:0.1; border-radius:50%; pointer-events:none;"></div>
+                        <div class="card-icon gradient-icon" style="background: linear-gradient(135deg, #0284c7, #00E6F0); box-shadow: 0 10px 20px rgba(0, 230, 240, 0.2);"><i class="ph ph-code"></i></div>
+                        <h3 style="font-size: 2.25rem; margin-bottom: 1.5rem;">Custom Web Development</h3>
+                        <p class="card-desc" style="font-size: 1.15rem; line-height: 1.8;">Fast, secure, and infinitely scalable. We build web applications and corporate sites using robust modern stacks, explicitly tailored to handle massive traffic and deliver edge-level premium performance.</p>
+                    </div>
+
+                    <!-- Right Side: Deliverables -->
+                    <div style="background: rgba(10,10,14,0.5); padding: 4rem; border-left: 1px solid rgba(255,255,255,0.05); display: flex; flex-direction: column; justify-content: center;">
+                        <h4 style="color: var(--color-accent); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 2.5rem;">Deliverables</h4>
+                        <ul style="list-style:none; color: var(--text-secondary); display:flex; flex-direction: column; gap: 2rem;">
+                            <li style="display: flex; align-items: flex-start; gap: 1.25rem;">
+                                <div class="card-icon chrome-icon" style="margin: 0; width: 44px; height: 44px; font-size: 1.25rem; flex-shrink: 0;"><i class="ph ph-atom"></i></div>
+                                <div>
+                                    <strong style="color: var(--text-primary); display: block; margin-bottom: 0.25rem; font-size: 1.1rem;">Full-Stack Development</strong>
+                                    <span style="font-size: 0.95rem; line-height: 1.5; display: block;">Modern React, Next.js, and Node.js backend infrastructure.</span>
+                                </div>
+                            </li>
+                            <li style="display: flex; align-items: flex-start; gap: 1.25rem;">
+                                <div class="card-icon chrome-icon" style="margin: 0; width: 44px; height: 44px; font-size: 1.25rem; flex-shrink: 0;"><i class="ph ph-shopping-cart"></i></div>
+                                <div>
+                                    <strong style="color: var(--text-primary); display: block; margin-bottom: 0.25rem; font-size: 1.1rem;">E-Commerce Solutions</strong>
+                                    <span style="font-size: 0.95rem; line-height: 1.5; display: block;">Headless Shopify builds and perfectly optimized custom carts.</span>
+                                </div>
+                            </li>
+                            <li style="display: flex; align-items: flex-start; gap: 1.25rem;">
+                                <div class="card-icon chrome-icon" style="margin: 0; width: 44px; height: 44px; font-size: 1.25rem; flex-shrink: 0;"><i class="ph ph-database"></i></div>
+                                <div>
+                                    <strong style="color: var(--text-primary); display: block; margin-bottom: 0.25rem; font-size: 1.1rem;">CMS Integration</strong>
+                                    <span style="font-size: 0.95rem; line-height: 1.5; display: block;">Headless CMS configurations (Sanity, WordPress) for total content control.</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service 3: SEO -->
+            <div class="flat-card beam-card fade-up delay-2 glass-card" style="padding: 0; overflow: hidden; display: flex; flex-direction: column; gap: 0; border-radius: 24px;">
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));">
+                    <!-- Left Side: Pitch -->
+                    <div style="padding: 4rem; position: relative;">
+                        <div style="position:absolute; top:-50px; left:-50px; width:200px; height:200px; background:#a855f7; filter:blur(100px); opacity:0.1; border-radius:50%; pointer-events:none;"></div>
+                        <div class="card-icon gradient-icon" style="background: linear-gradient(135deg, #a855f7, #6366f1); box-shadow: 0 10px 20px rgba(168, 85, 247, 0.2);"><i class="ph ph-trend-up"></i></div>
+                        <h3 style="font-size: 2.25rem; margin-bottom: 1.5rem;">SEO & Growth</h3>
+                        <p class="card-desc" style="font-size: 1.15rem; line-height: 1.8;">Beautiful websites are useless if no one sees them. Our data-driven SEO strategies push your brand to the top of search results and significantly drive organic, convertible traffic to boost your bottom line.</p>
+                    </div>
+
+                    <!-- Right Side: Deliverables -->
+                    <div style="background: rgba(10,10,14,0.5); padding: 4rem; border-left: 1px solid rgba(255,255,255,0.05); display: flex; flex-direction: column; justify-content: center;">
+                        <h4 style="color: var(--color-accent); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 2.5rem;">Deliverables</h4>
+                        <ul style="list-style:none; color: var(--text-secondary); display:flex; flex-direction: column; gap: 2rem;">
+                            <li style="display: flex; align-items: flex-start; gap: 1.25rem;">
+                                <div class="card-icon chrome-icon" style="margin: 0; width: 44px; height: 44px; font-size: 1.25rem; flex-shrink: 0;"><i class="ph ph-magnifying-glass"></i></div>
+                                <div>
+                                    <strong style="color: var(--text-primary); display: block; margin-bottom: 0.25rem; font-size: 1.1rem;">Technical SEO Audits & Fixes</strong>
+                                    <span style="font-size: 0.95rem; line-height: 1.5; display: block;">Optimizing Core Web Vitals, site speed, and indexability.</span>
+                                </div>
+                            </li>
+                            <li style="display: flex; align-items: flex-start; gap: 1.25rem;">
+                                <div class="card-icon chrome-icon" style="margin: 0; width: 44px; height: 44px; font-size: 1.25rem; flex-shrink: 0;"><i class="ph ph-target"></i></div>
+                                <div>
+                                    <strong style="color: var(--text-primary); display: block; margin-bottom: 0.25rem; font-size: 1.1rem;">Targeted Keyword Strategy</strong>
+                                    <span style="font-size: 0.95rem; line-height: 1.5; display: block;">Advanced competitive analysis and high-intent term mapping.</span>
+                                </div>
+                            </li>
+                            <li style="display: flex; align-items: flex-start; gap: 1.25rem;">
+                                <div class="card-icon chrome-icon" style="margin: 0; width: 44px; height: 44px; font-size: 1.25rem; flex-shrink: 0;"><i class="ph ph-arrows-merge"></i></div>
+                                <div>
+                                    <strong style="color: var(--text-primary); display: block; margin-bottom: 0.25rem; font-size: 1.1rem;">Conversion Rate Optimization (CRO)</strong>
+                                    <span style="font-size: 0.95rem; line-height: 1.5; display: block;">A/B testing flows to turn your new traffic into paying customers.</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="footer" id="contact">
+    <footer class="footer" id="contact" style="padding-top: 5rem;">
         <div class="container">
             <div class="massive-cta fade-up">
                 <div class="cta-content">
-                    <h2 style="color: var(--text-inverse); font-size: 4rem;">Ready to build a brand <br> that stands out?</h2>
-                    <p style="color: var(--color-dominant); font-weight:600; margin-top: 1.5rem; font-size: 1.25rem;">Let's collaborate on your next big project. Elevate your digital presence today.</p>
+                    <h2 style="color: var(--text-inverse); font-size: 4rem;">Let's Build Something <br> <span style="font-style: italic; color: #a855f7;">Legendary.</span></h2>
+                    <p style="color: var(--color-dominant); font-weight:600; margin-top: 1.5rem; font-size: 1.25rem;">
+                        We're a team of designers, developers, and digital strategists who wake up every day excited to solve hard problems and build things that matter.
+                    </p>
+                    <p style="color: var(--color-dominant); font-weight:400; margin-top: 1rem; font-size: 1.1rem; max-width: 700px; margin-left: auto; margin-right: auto;">
+                        If you're ready to take your digital presence to the next level, we're ready to make it happen.<br>
+                        <strong>Rayvotech — Smart. Fast. Creative.</strong>
+                    </p>
                 </div>
                 <div class="cta-action" style="margin-top: 3rem;">
                     <a href="hire.html" class="btn btn-outline btn-lg" style="border-color: var(--color-dominant); color: var(--color-dominant);">Start the Conversation <i class="ph ph-arrow-right"></i></a>
@@ -123,6 +255,9 @@
                         <a href="about.html">About Us</a>
                         <a href="services.html">Services</a>
                         <a href="portfolio.html">Our Work</a>
+                        <a href="pricing.html">Pricing</a>
+                        <a href="faqs.html">FAQs</a>
+                        <a href="contact.html">Contact</a>
                     </div>
                     <div class="link-group">
                         <h4>Social</h4>
