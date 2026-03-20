@@ -1,0 +1,19 @@
+@import url('/temp-app/style.css');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-dominant, #0A0A0A);
+  color: var(--text-primary, #FFFFFF);
+  font-family: var(--font-body, 'IBM Plex Sans', sans-serif);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
