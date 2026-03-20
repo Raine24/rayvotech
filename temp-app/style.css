@@ -1365,3 +1365,52 @@ input:focus, textarea:focus {
     .v-step-item { padding-left: 3.5rem; }
     .vertical-connector-track { left: 17px; }
 }
+
+
+/* Override Hero Title Size */
+.hero-title { font-size: clamp(2.5rem, 5vw, 4rem) !important; }
+
+
+/* Override Hero Section Padding & Floating Element Box */
+.hero { padding-top: 100px !important; min-height: auto !important; margin-bottom: 2rem !important; }
+@media(max-width: 900px) { .hero { padding-top: 80px !important; } }
+
+@media(min-width: 900px) {
+  .hero-objects .ui-widget { display: none !important; }
+  .hero-objects .code-window { 
+      right: auto !important; 
+      left: 32% !important; 
+      bottom: auto !important; 
+      top: 15% !important; 
+      z-index: 10 !important; 
+      zoom: 0.8; /* Makes it smaller without overriding transform animations */
+  }
+}
+@media(max-width: 899px) {
+  .hero-objects .ui-widget { display: none !important; }
+  .hero-objects .code-window { right: auto !important; left: 30% !important; top: 10% !important; zoom: 0.7; }
+}
+/* ------------------------------------------- */
+/* HERO OPTIMIZATION FOR 2 LINES & NO SCROLL  */
+/* ------------------------------------------- */
+
+/* Shared space reduction to bring CTA up */
+.hero-text-col > h1 { margin-bottom: 1rem !important; line-height: 1.1 !important; }
+.hero-text-col > p { margin-bottom: 1.5rem !important; line-height: 1.4 !important; }
+.y2k-badge { margin-bottom: 0.5rem !important; }
+
+/* Desktop */
+@media(min-width: 900px) {
+  .hero-title { font-size: clamp(3rem, 4.5vw, 4.5rem) !important; white-space: nowrap; }
+  .hero-subtitle { max-width: 95% !important; font-size: clamp(1rem, 1.5vw, 1.2rem) !important; white-space: nowrap; }
+}
+
+/* Mobile */
+@media(max-width: 899px) {
+  /* Shrink text specifically so it doesn't wrap to a third line */
+  .hero-title { font-size: clamp(1.8rem, 8vw, 2.5rem) !important; }
+  .hero-subtitle { font-size: clamp(0.85rem, 4vw, 1rem) !important; max-width: 100% !important; }
+  .hero-actions .btn { padding: 0.5rem 1rem !important; font-size: 0.9rem !important; }
+  .hero-top-split { gap: 1rem !important; }
+  .hero { padding-top: 60px !important; margin-bottom: 1rem !important; }
+}
