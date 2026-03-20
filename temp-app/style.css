@@ -1199,218 +1199,139 @@ input:focus, textarea:focus {
     .faq-answer.open { padding: 0 1.5rem 1.25rem; }
 }
 
-@media (max-width: 480px) {
-    h1 { font-size: clamp(1.8rem, 8vw, 2.5rem); }
-    .hero-subtitle { font-size: 0.85rem; }
-    .hero-stats { flex-direction: column; gap: 0.75rem; border-radius: 16px; padding: 1rem; }
-    .stat-divider { width: 40px; height: 1px; }
-    .tech-badge { font-size: 0.7rem; }
-    .navbar .btn-primary { font-size: 0.75rem; padding: 0.5rem 1rem; }
-    .pricing-card { padding: 2rem 1.5rem; }
-    .massive-cta { padding: 4rem 2rem; }
-    .massive-cta h2 { font-size: 2.5rem !important; }
-}
-
-
-
 /* ==========================================================================
-   Split Timeline Approach
+   Mobile Optimization Core Overrides
    ========================================================================== */
-.split-process {
-    padding: 8rem 0;
-    position: relative;
-    z-index: 10;
-}
-.split-container {
-    display: grid;
-    grid-template-columns: 1fr 1.2fr;
-    gap: 6rem;
-    align-items: flex-start;
-}
-.process-visual-col {
-    position: sticky;
-    top: 8rem; /* Sticks below navbar */
-}
-.process-shaped-frame {
-    position: relative;
-    width: 100%;
-    aspect-ratio: 4 / 5;
-    border-radius: 24px;
-    overflow: hidden;
-    box-shadow: 0 20px 50px rgba(0,0,0,0.5);
-    border: 1px solid rgba(255,255,255,0.1);
-}
-.process-shaped-frame img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    filter: brightness(0.8) contrast(1.1);
-    transition: transform 0.5s ease;
-}
-.process-shaped-frame:hover img {
-    transform: scale(1.05);
-}
-.frame-glass-overlay {
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(135deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 50%, rgba(0, 230, 240, 0.1) 100%);
-    pointer-events: none;
-}
-.frame-border-glow {
-    position: absolute;
-    inset: 0;
-    border-radius: 24px;
-    box-shadow: inset 0 0 40px rgba(0,0,0,0.8);
-    pointer-events: none;
+
+@media (max-width: 900px) {
+    :root {
+        --section-gap: 4rem; /* Reduced from 8rem for tighter mobile feel */
+    }
+    
+    .section-padding { padding: 4rem 0; }
+    
+    /* Hero Title & Subtitle Optimization */
+    .hero-title { 
+        font-size: clamp(2rem, 7vw, 2.5rem) !important; 
+        line-height: 1.1 !important;
+        margin-bottom: 1rem !important;
+    }
+    .hero-subtitle { 
+        font-size: 0.95rem !important; 
+        line-height: 1.5 !important;
+        margin-bottom: 2rem !important;
+        max-width: 100% !important;
+    }
+
+    /* Hero Stats - Force Single Line */
+    .hero-stats {
+        flex-direction: row !important;
+        gap: 1rem !important;
+        padding: 0.75rem 1.5rem !important;
+        overflow-x: auto;
+        width: 100%;
+        justify-content: center;
+        white-space: nowrap;
+        scrollbar-width: none;
+    }
+    .hero-stats::-webkit-scrollbar { display: none; }
+    .stat-num { font-size: 1.25rem !important; }
+    .stat-label { font-size: 0.6rem !important; }
+    .stat-divider { height: 25px !important; }
+
+    /* Tech Stack - Wrap better or scale down */
+    .tech-icons {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.5rem !important;
+    }
+    .tech-badge {
+        padding: 0.4rem 0.75rem !important;
+        font-size: 0.75rem !important;
+    }
+
+    /* Section Header Padding */
+    .section-header { margin-bottom: 3rem !important; }
+    .section-header h2 { font-size: 2.25rem !important; white-space: normal; }
+    
+    /* Specific Fix for "Our Recent Work" to stay on one line if possible */
+    .work-header h2 { 
+        white-space: nowrap !important; 
+        font-size: clamp(1.5rem, 6vw, 2rem) !important;
+    }
+
+    /* Gap Reductions */
+    .work { padding-bottom: 2rem !important; }
+    .split-process { padding-top: 2rem !important; padding-bottom: 2rem !important; }
+    .pricing { padding-top: 2rem !important; }
+
+    /* Service Card Stats Optimization */
+    .seo-stats {
+        gap: 1.5rem !important;
+        justify-content: center;
+        width: 100%;
+    }
+    .seo-stats .neon-text { font-size: 2rem !important; }
+    .seo-stats .label { font-size: 0.7rem !important; }
+
+    /* Navigation / Mobile Menu */
+    .mobile-menu-toggle {
+        display: flex !important;
+        flex-direction: column;
+        gap: 5px;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        z-index: 101;
+        padding: 5px;
+    }
+    .mobile-menu-toggle .bar {
+        width: 25px;
+        height: 2px;
+        background: var(--text-primary);
+        transition: 0.3s;
+        border-radius: 2px;
+    }
+    
+    /* Animated Hamburger to X */
+    .mobile-menu-toggle.active .bar:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+    .mobile-menu-toggle.active .bar:nth-child(2) { opacity: 0; }
+    .mobile-menu-toggle.active .bar:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+    .nav-links {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 80%;
+        height: 100vh;
+        background: rgba(10, 10, 14, 0.95);
+        backdrop-filter: blur(20px);
+        flex-direction: column;
+        justify-content: center;
+        gap: 2rem;
+        transition: 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        z-index: 100;
+        box-shadow: -10px 0 30px rgba(0,0,0,0.5);
+    }
+    .nav-links.active { right: 0; }
+    .nav-links a { font-size: 1.25rem !important; }
+
+    .navbar .btn-primary { display: none; } /* Hide "Hire Us" in main bar, move to menu if needed */
+    
+    /* Disable Horizontal Scroll */
+    body, html {
+        overflow-x: hidden !important;
+        width: 100%;
+        position: relative;
+    }
+    
+    /* Fix floating objects causing overflow */
+    .hero-objects { display: none; }
 }
 
-/* Timeline Column */
-.process-timeline-col {
-    position: relative;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-}
-.vertical-connector-track {
-    position: absolute;
-    left: 17px;
-    top: 2rem;
-    bottom: 4rem;
-    width: 2px;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 2px;
-}
-.vertical-connector-fill {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 30%; /* Could be animated with JS on scroll */
-    background: var(--color-accent);
-    box-shadow: 0 0 10px var(--color-accent);
-}
-
-.v-step-item {
-    position: relative;
-    padding-left: 4.5rem;
-    margin-bottom: 5rem;
-}
-.v-step-item:last-child {
-    margin-bottom: 0;
-}
-.v-step-node {
-    position: absolute;
-    left: 0;
-    top: 6px;
-    width: 36px;
-    height: 36px;
-    border-radius: 50%;
-    background: var(--color-surface);
-    border: 2px solid rgba(255,255,255,0.2);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.4s ease;
-    z-index: 2;
-}
-.v-step-item:hover .v-step-node {
-    border-color: var(--color-accent);
-    background: rgba(0,230,240,0.1);
-    box-shadow: 0 0 20px rgba(0, 230, 240, 0.4);
-    transform: scale(1.1);
-}
-.v-step-node::after {
-    content: '';
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background: var(--color-accent);
-    opacity: 0;
-    transition: opacity 0.4s ease;
-}
-.v-step-item:hover .v-step-node::after {
-    opacity: 1;
-}
-
-.v-step-title {
-    font-size: 2rem;
-    font-weight: 700;
-    margin-bottom: 1rem;
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    color: var(--text-primary);
-    transition: color 0.3s ease;
-}
-.v-step-num {
-    font-family: var(--font-mono);
-    font-size: 1.1rem;
-    font-weight: 400;
-    color: var(--color-accent);
-}
-.v-step-content p {
-    font-size: 1.2rem;
-    line-height: 1.8;
-    color: var(--text-secondary);
-    max-width: 90%;
-}
-
-@media (max-width: 1024px) {
-    .split-container { grid-template-columns: 1fr; gap: 4rem; }
-    .process-visual-col { position: relative; top: 0; margin-bottom: 2rem; }
-    .process-shaped-frame { aspect-ratio: 21/9; }
-}
-@media (max-width: 768px) {
-    .v-step-title { font-size: 1.5rem; }
-    .v-step-content p { font-size: 1.05rem; max-width: 100%; }
-    .v-step-item { padding-left: 3.5rem; }
-    .vertical-connector-track { left: 17px; }
-}
-
-
-/* Override Hero Title Size */
-.hero-title { font-size: clamp(2.5rem, 5vw, 4rem) !important; }
-
-
-/* Override Hero Section Padding & Floating Element Box */
-.hero { padding-top: 100px !important; min-height: auto !important; margin-bottom: 2rem !important; }
-@media(max-width: 900px) { .hero { padding-top: 80px !important; } }
-
-@media(min-width: 900px) {
-  .hero-objects .ui-widget { display: none !important; }
-  .hero-objects .code-window { 
-      right: auto !important; 
-      left: 32% !important; 
-      bottom: auto !important; 
-      top: 15% !important; 
-      z-index: 10 !important; 
-      zoom: 0.8; /* Makes it smaller without overriding transform animations */
-  }
-}
-@media(max-width: 899px) {
-  .hero-objects .ui-widget { display: none !important; }
-  .hero-objects .code-window { right: auto !important; left: 30% !important; top: 10% !important; zoom: 0.7; }
-}
-/* ------------------------------------------- */
-/* HERO OPTIMIZATION FOR 2 LINES & NO SCROLL  */
-/* ------------------------------------------- */
-
-/* Shared space reduction to bring CTA up */
-.hero-text-col > h1 { margin-bottom: 1rem !important; line-height: 1.1 !important; }
-.hero-text-col > p { margin-bottom: 1.5rem !important; line-height: 1.4 !important; }
-.y2k-badge { margin-bottom: 0.5rem !important; }
-
-/* Desktop */
-@media(min-width: 900px) {
-  .hero-title { font-size: clamp(3rem, 4.5vw, 4.5rem) !important; white-space: nowrap; }
-  .hero-subtitle { max-width: 95% !important; font-size: clamp(1rem, 1.5vw, 1.2rem) !important; white-space: nowrap; }
-}
-
-/* Mobile */
-@media(max-width: 899px) {
-  /* Shrink text specifically so it doesn't wrap to a third line */
-  .hero-title { font-size: clamp(1.8rem, 8vw, 2.5rem) !important; }
-  .hero-subtitle { font-size: clamp(0.85rem, 4vw, 1rem) !important; max-width: 100% !important; }
-  .hero-actions .btn { padding: 0.5rem 1rem !important; font-size: 0.9rem !important; }
-  .hero-top-split { gap: 1rem !important; }
-  .hero { padding-top: 60px !important; margin-bottom: 1rem !important; }
+@media (max-width: 480px) {
+    .hero { padding-top: 100px !important; }
+    .y2k-badge { margin-top: 1.5rem !important; margin-bottom: 1rem !important; }
+    .hero-title { font-size: 1.85rem !important; }
+    .massive-cta h2 { font-size: 2.25rem !important; }
 }
