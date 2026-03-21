@@ -48,7 +48,7 @@
     <!-- Phosphor Icons -->
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
     <!-- Styles -->
-    <link rel="stylesheet" href="style.css?v=7">
+    <link rel="stylesheet" href="style.css?v=27">
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="https://i.imgur.com/PYTMauh.png">
 </head>
@@ -408,6 +408,21 @@
             </div>
         </div>
     </footer>
+
+    <!-- Mobile Spacing Fix -->
+    <style>
+        @media(max-width: 768px) {
+            .hero {
+                padding-bottom: 0 !important;
+                min-height: auto !important;
+                margin-bottom: 0 !important;
+            }
+            .pricing {
+                padding-top: 0 !important;
+                margin-top: -2rem !important;
+            }
+        }
+    </style>
 
     <!-- Scripts -->
     <script src="script.js"></script>

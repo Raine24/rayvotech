@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
-    <link rel="stylesheet" href="style.css?v=7">
+    <link rel="stylesheet" href="style.css?v=27">
     <!-- SEO_INJECT_START -->
     <!-- Open Graph / Social Media -->
     <meta property="og:type" content="website">
@@ -100,7 +100,7 @@
         <div class="container" style="max-width: 1200px;">
             
             <!-- Top Row: Contact Details & Form -->
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 2rem; margin-bottom: 2rem;">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 400px), 1fr)); gap: 2rem; margin-bottom: 2rem;">
                 
                 <!-- Contact Details Card -->
                 <div class="flat-card beam-card fade-up delay-3" style="display: flex; flex-direction: column;">
@@ -497,6 +497,20 @@
         @media(max-width: 900px) {
             .section-padding .container > div {
                 grid-template-columns: 1fr !important;
+            }
+        }
+        
+        @media(max-width: 768px) {
+            /* Force side-by-side form fields to stack cleanly on mobile */
+            form [style*="grid-template-columns: 1fr 1fr"] {
+                grid-template-columns: 1fr !important;
+            }
+            .hero[style*="padding-bottom: 2rem"] {
+                padding-bottom: 0 !important;
+                margin-bottom: 0 !important;
+            }
+            .section-padding[style*="padding-top: 2rem"] {
+                padding-top: 0 !important;
             }
         }
     </style>
