@@ -1455,10 +1455,64 @@ input:focus, textarea:focus {
     .section-header { margin-bottom: 3rem !important; }
     .section-header h2 { font-size: 2.25rem !important; white-space: normal; }
     
-    /* Specific Fix for "Our Recent Work" to stay on one line if possible */
+    /* Make subtitle pill borders white on mobile */
+    .section-tag { border-color: rgba(255, 255, 255, 0.5) !important; }
+    
+    /* Specific Fix for "Our Recent Work" and Arrows alignment */
+    .work-header {
+        display: flex !important;
+        flex-direction: row !important;
+        justify-content: space-between !important;
+        align-items: flex-end !important;
+        margin-bottom: 2rem !important;
+    }
+    .work-header .section-header {
+        text-align: left !important;
+        margin-bottom: 0 !important;
+    }
+    .work-header .section-tag { 
+        white-space: nowrap !important; 
+        display: inline-flex !important;
+        align-items: center;
+        gap: 0.75rem !important;
+        margin-bottom: 0.5rem;
+    }
+    .work-header .section-tag::before {
+        content: '' !important;
+        display: block !important;
+        width: 8px !important;
+        height: 8px !important;
+        min-width: 8px !important;
+        border-radius: 50% !important;
+        background: var(--color-accent) !important;
+        box-shadow: 0 0 10px var(--color-accent) !important;
+        flex-shrink: 0;
+    }
     .work-header h2 { 
         white-space: nowrap !important; 
-        font-size: clamp(1.5rem, 6vw, 2rem) !important;
+        font-size: clamp(1.3rem, 5vw, 1.8rem) !important; /* Scaled down to fit next to arrows */
+    }
+
+    /* Hero CTA Button Fixes for Mobile */
+    .hero-actions {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 1.5rem !important;
+        width: 100% !important;
+        align-items: center !important;
+    }
+    .hero-actions .btn {
+        width: 100% !important;
+        max-width: 300px !important;
+        justify-content: center !important;
+        margin-bottom: 1rem !important; /* Explicit hard margin fallback to stop collision */
+    }
+    .hero-actions .btn:last-child { margin-bottom: 0 !important; }
+    
+    /* Guarantee outline buttons stay crisp and white on dark backgrounds */
+    .btn-outline {
+        border-color: rgba(255, 255, 255, 0.4) !important;
+        color: #ffffff !important;
     }
 
     /* Gap Reductions */
@@ -1551,7 +1605,7 @@ input:focus, textarea:focus {
         letter-spacing: 0.2em;
         font-weight: 800;
         color: #a0a0a0;
-        margin-bottom: 2.5rem;
+        margin-bottom: 1rem; /* Reduced padding down from 2.5rem */
         opacity: 0;
         transform: translateY(10px);
         transition: 0.5s 0.4s;
