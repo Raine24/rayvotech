@@ -47,7 +47,7 @@
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
     <!-- Phosphor Icons -->
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
-    <link rel="stylesheet" href="style.css?v=7">
+    <link rel="stylesheet" href="style.css?v=27">
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="https://i.imgur.com/PYTMauh.png">
 </head>
@@ -60,17 +60,18 @@
         <div class="nav-container container">
             <a href="index.html" class="logo" style="display: flex; align-items: center;"><img src="https://i.imgur.com/thPnAch.png" alt="Rayvotech" style="height: 35px; width: auto;" /></a>
             <div class="nav-links">
-                <a href="index.html">Home</a>
-                <a href="about.html">About Us</a>
-                <a href="services.html">Services</a>
-                <a href="portfolio.html">Portfolio</a>
-                <a href="pricing.html">Pricing</a>
-                <a href="faqs.html">FAQs</a>
-                <a href="contact.html">Contact</a>
+                <a style="--i: 0;" href="index.html">Home</a>
+                <a style="--i: 1;" href="about.html">About Us</a>
+                <a style="--i: 2;" href="services.html">Services</a>
+                <a style="--i: 3;" href="portfolio.html">Portfolio</a>
+                <a style="--i: 4;" href="pricing.html">Pricing</a>
+                <a style="--i: 5;" href="faqs.html">FAQs</a>
+                <a style="--i: 6;" href="contact.html">Contact</a>
+                <a style="--i: 7;" href="hire.html" class="menu-hire-btn">HIRE US</a>
             </div>
             <a href="hire.html" class="btn btn-primary">Hire Us</a>
             <!-- Hamburger Menu -->
-            <button class="mobile-menu-toggle" aria-label="Toggle Menu" style="display: none;">
+            <button class="mobile-menu-toggle" aria-label="Toggle Menu">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -101,7 +102,7 @@
     <section class="section-padding" style="padding-top: 2rem;">
         <div class="container">
             <!-- Full width Image showcase -->
-            <div class="fade-up glass-card" style="height: 600px; border-radius: 20px; background: url('https://i.imgur.com/JrvsgXo.jpg') top center/cover no-repeat; border: 1px solid rgba(255,255,255,0.1); margin-bottom: 6rem; box-shadow: 0 30px 60px rgba(0,0,0,0.5);"></div>
+            <div class="fade-up glass-card" style="height: clamp(300px, 50vw, 600px); border-radius: 20px; background: url('https://i.imgur.com/JrvsgXo.jpg') top center/cover no-repeat; border: 1px solid rgba(255,255,255,0.1); margin-bottom: 6rem; box-shadow: 0 30px 60px rgba(0,0,0,0.5);"></div>
 
             <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; margin-bottom: 6rem;">
                 <div class="fade-up">
