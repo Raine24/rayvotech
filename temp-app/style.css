@@ -41,7 +41,7 @@
 
     /* Layout */
     --container-padding: 2rem;
-    --section-gap: 8rem;
+    --section-gap: 1.5rem;
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -175,7 +175,7 @@ a { color: inherit; text-decoration: none; transition: all var(--transition-fast
 .container { max-width: 1300px; margin: 0 auto; padding: 0 var(--container-padding); }
 .section-padding { padding: var(--section-gap) 0; }
 .text-center { text-align: center; }
-.section-header { margin-bottom: 5rem; }
+.section-header { margin-bottom: 2rem; }
 
 /* Tags */
 .section-tag {
@@ -411,7 +411,7 @@ input:focus, textarea:focus {
     align-items: center;
     justify-content: center;
     padding-top: 8rem;
-    padding-bottom: 1rem;
+    padding-bottom: 5rem;
     background: transparent;
 }
 
@@ -729,13 +729,13 @@ input:focus, textarea:focus {
 /* ==========================================================================
    Services / Bento Grid
    ========================================================================== */
-.services { padding: 8rem 0; position: relative; }
+.services { padding: 3rem 0; position: relative; }
 .bento-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, minmax(280px, auto));
     gap: 24px; /* Strict 24px gap */
-    margin-top: 4rem;
+    margin-top: 2rem;
 }
 
 /* Border Beams (Vercel Style) for specific featured cards */
@@ -818,9 +818,9 @@ input:focus, textarea:focus {
    Horizontal Scroll Work Gallery
    ========================================================================== */
 .work {
-    padding: 8rem 0; position: relative; overflow: hidden;
+    padding: 3rem 0 5rem !important; position: relative; overflow: hidden;
 }
-.work-header { display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 4rem; }
+.work-header { display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 2rem; }
 .work-nav { display: flex; gap: 1rem; }
 
 .btn-icon {
@@ -835,7 +835,7 @@ input:focus, textarea:focus {
     box-shadow: 0 10px 20px rgba(0, 230, 240, 0.4);
 }
 
-.gallery-wrapper { width: 100%; overflow-x: auto; scrollbar-width: none; padding-bottom: 3rem; }
+.gallery-wrapper { width: 100%; overflow-x: auto; scrollbar-width: none; padding-bottom: 1rem; margin-bottom: 0; }
 .gallery-wrapper::-webkit-scrollbar { display: none; }
 .gallery-track { display: flex; gap: 4rem; padding: 0 var(--container-padding); width: max-content; }
 .gallery-item { width: 550px; flex-shrink: 0; }
@@ -863,17 +863,20 @@ input:focus, textarea:focus {
    Process Section
    ========================================================================== */
 .process {
-    padding: 8rem 0; background: transparent; 
+    padding: 0 0 6rem 0 !important; background: transparent; 
 }
 .process-timeline {
-    position: relative; max-width: 900px; margin: 5rem auto 0;
+    position: relative; max-width: 900px; margin: 1.5rem auto 0;
 }
 .fluid-line {
     position: absolute; left: 40px; top: 0; bottom: 0; width: 4px;
     background: linear-gradient(to bottom, var(--color-accent), var(--color-secondary), var(--color-secondary-light));
     border-radius: 4px; opacity: 0.5; filter: blur(2px);
 }
-.process-step { display: flex; gap: 4rem; margin-bottom: 5rem; padding: 4rem; position: relative; border-radius: 24px; background: var(--color-surface); border: 1px solid var(--border-glass); }
+.process-step { display: flex; gap: 2rem; margin-bottom: 2rem; padding: 2rem; position: relative; border-radius: 24px; background: var(--color-surface); border: 1px solid var(--border-glass); }
+.process-step:last-child { margin-bottom: 4rem !important; }
+
+#pricing { padding-top: 2rem !important; }
 .gradient-circle {
     width: 80px; height: 80px; border-radius: 50%; flex-shrink: 0;
     background: var(--color-accent);
@@ -886,13 +889,13 @@ input:focus, textarea:focus {
 /* ==========================================================================
    Testimonials Section
    ========================================================================== */
-.testimonials { padding: 8rem 0; }
+.testimonials { padding: 0.5rem 0 5rem 0; }
 
 .testimonials-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
-    margin-top: 4rem;
+    margin-top: 2rem;
 }
 
 .testimonial-card {
@@ -1063,10 +1066,10 @@ input:focus, textarea:focus {
 /* ==========================================================================
    FAQ Section
    ========================================================================== */
-.faqs { padding: 8rem 0; }
+.faqs { padding: 0.5rem 0; }
 
 .faq-list {
-    margin-top: 4rem;
+    margin-top: 2rem;
     max-width: 780px;
     margin-left: auto;
     margin-right: auto;
@@ -1133,15 +1136,15 @@ input:focus, textarea:focus {
 .massive-cta {
     background: var(--color-accent);
     border-radius: 32px;
-    padding: 6rem 4rem;
+    padding: 3rem 2rem;
     text-align: center;
     color: var(--text-inverse);
 }
 
 .footer {
-    padding: 6rem 0 2rem;
+    padding: 3rem 0 2rem;
 }
-.footer-bottom { display: flex; justify-content: space-between; padding-bottom: 4rem; border-bottom: none; margin-top: 4rem;}
+.footer-bottom { display: flex; justify-content: space-between; padding-bottom: 2rem; border-bottom: none; margin-top: 2rem;}
 .footer-links { display: flex; gap: 5rem; }
 .link-group h4 { font-size: 1.125rem; margin-bottom: 1.5rem; color: var(--text-primary); }
 
@@ -1382,6 +1385,15 @@ input:focus, textarea:focus {
     }
     
     .section-padding { padding: 4rem 0; }
+
+    /* Full-width sections on mobile */
+    .container { padding: 0 1rem !important; }
+
+    /* Force all body text white on mobile */
+    p, .text-secondary, .hero-subtitle, .step-content p, .faq-answer p,
+    .bento-item p, .testimonial-text, .v-step-content p {
+        color: #ffffff !important;
+    }
     
     /* Pull the mobile pill header up to a clean gap */
     .navbar { top: 1rem !important; }
@@ -1596,25 +1608,9 @@ input:focus, textarea:focus {
     /* Add counter for the staggered numbers */
     .nav-links { counter-reset: nav-item; }
 
-    /* The "// NAVIGATION" Slashed Header generated via ::before */
+    /* The "// NAVIGATION" Slashed Header — REMOVED per user request */
     .nav-links::before {
-        content: '// NAVIGATION';
-        display: block;
-        font-size: 0.75rem;
-        text-transform: uppercase;
-        letter-spacing: 0.2em;
-        font-weight: 800;
-        color: #a0a0a0;
-        margin-bottom: 1rem; /* Reduced padding down from 2.5rem */
-        opacity: 0;
-        transform: translateY(10px);
-        transition: 0.5s 0.4s;
-        width: 100%;
-        text-align: left;
-    }
-    .nav-links.active::before {
-        opacity: 0.5;
-        transform: translateY(0);
+        display: none !important;
     }
 
     /* Style the standard links to look elite */
