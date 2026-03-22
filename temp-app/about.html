@@ -48,7 +48,7 @@
     <!-- Phosphor Icons -->
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
     <!-- Styles -->
-    <link rel="stylesheet" href="style.css?v=7">
+    <link rel="stylesheet" href="style.css?v=27">
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="https://i.imgur.com/PYTMauh.png">
 </head>
@@ -82,17 +82,18 @@
         <div class="nav-container container">
             <a href="index.html" class="logo" style="display: flex; align-items: center;"><img src="https://i.imgur.com/thPnAch.png" alt="Rayvotech" style="height: 35px; width: auto;" /></a>
             <div class="nav-links">
-                <a href="index.html">Home</a>
-                <a href="about.html">About Us</a>
-                <a href="services.html">Services</a>
-                <a href="portfolio.html">Portfolio</a>
-                <a href="pricing.html">Pricing</a>
-                        <a href="faqs.html">FAQs</a>
-                <a href="contact.html">Contact</a>
+                <a style="--i: 0;" href="index.html">Home</a>
+                <a style="--i: 1;" href="services.html">Services</a>
+                <a style="--i: 2;" href="portfolio.html">Portfolio</a>
+                <a style="--i: 3;" href="pricing.html">Pricing</a>
+                <a style="--i: 4;" href="faqs.html">FAQs</a>
+                <a style="--i: 5;" href="about.html">About Us</a>
+                <a style="--i: 6;" href="contact.html">Contact</a>
+                <a style="--i: 7;" href="hire.html" class="menu-hire-btn">HIRE US</a>
             </div>
             <a href="hire.html" class="btn btn-primary">Hire Us</a>
             <!-- Hamburger Menu -->
-            <button class="mobile-menu-toggle" aria-label="Toggle Menu" style="display: none;">
+            <button class="mobile-menu-toggle" aria-label="Toggle Menu">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -119,7 +120,7 @@
     <!-- Cinematic Image Section -->
     <section style="padding: 0 0 6rem 0;">
         <div class="container" style="max-width: 1400px;">
-            <div class="fade-up delay-3" style="width: 100%; height: 75vh; min-height: 600px; border-radius: 32px; overflow: hidden; position: relative; box-shadow: 0 40px 100px rgba(0,0,0,0.8); border: 1px solid rgba(255,255,255,0.05);">
+            <div class="fade-up delay-3" style="width: 100%; height: 75vh; min-height: clamp(300px, 50vw, 600px); border-radius: 32px; overflow: hidden; position: relative; box-shadow: 0 40px 100px rgba(0,0,0,0.8); border: 1px solid rgba(255,255,255,0.05);">
                 <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2850&auto=format&fit=crop" alt="The Rayvotech Team" style="width: 100%; height: 100%; object-fit: cover; filter: grayscale(20%) contrast(1.1);">
                 <div style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(10,10,14,0.9), transparent 50%); pointer-events: none;"></div>
             </div>

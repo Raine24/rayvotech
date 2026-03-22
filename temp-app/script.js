@@ -144,20 +144,36 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
-    // --- Mobile Menu Toggle ---
+    // --- Premium Mobile Menu Toggle ---
     const menuToggle = document.querySelector('.mobile-menu-toggle');
     const navLinks = document.querySelector('.nav-links');
     
     if (menuToggle && navLinks) {
         menuToggle.addEventListener('click', () => {
-            menuToggle.classList.toggle('active');
+            const isActive = menuToggle.classList.toggle('active');
             navLinks.classList.toggle('active');
+            document.body.classList.toggle('menu-open');
+            document.documentElement.classList.toggle('menu-open');
             
-            // Prevent scrolling when menu is open
-            if (navLinks.classList.contains('active')) {
-                document.body.style.overflow = 'hidden';
-            } else {
-                document.body.style.overflow = '';
+            // Tawk.to Widget Management
+            if (window.Tawk_API) {
+                if (isActive) window.Tawk_API.hideWidget();
+                else window.Tawk_API.showWidget();
+            }
+
+            // Optional: Close on Escape key
+            if (isActive) {
+                const escapeHandler = (e) => {
+                    if (e.key === 'Escape') {
+                        menuToggle.classList.remove('active');
+                        navLinks.classList.remove('active');
+                        document.body.classList.remove('menu-open');
+                        document.documentElement.classList.remove('menu-open');
+                        if (window.Tawk_API) window.Tawk_API.showWidget();
+                        window.removeEventListener('keydown', escapeHandler);
+                    }
+                };
+                window.addEventListener('keydown', escapeHandler);
             }
         });
 
@@ -166,7 +182,9 @@ document.addEventListener('DOMContentLoaded', () => {
             link.addEventListener('click', () => {
                 menuToggle.classList.remove('active');
                 navLinks.classList.remove('active');
-                document.body.style.overflow = '';
+                document.body.classList.remove('menu-open');
+                document.documentElement.classList.remove('menu-open');
+                if (window.Tawk_API) window.Tawk_API.showWidget();
             });
         });
     }

@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
-    <link rel="stylesheet" href="style.css?v=7">
+    <link rel="stylesheet" href="style.css?v=27">
     <!-- SEO_INJECT_START -->
     <!-- Open Graph / Social Media -->
     <meta property="og:type" content="website">
@@ -71,17 +71,18 @@
         <div class="nav-container container">
             <a href="index.html" class="logo" style="display: flex; align-items: center;"><img src="https://i.imgur.com/thPnAch.png" alt="Rayvotech" style="height: 35px; width: auto;" /></a>
             <div class="nav-links">
-                <a href="index.html">Home</a>
-                <a href="about.html">About Us</a>
-                <a href="services.html">Services</a>
-                <a href="portfolio.html">Portfolio</a>
-                <a href="pricing.html">Pricing</a>
-                        <a href="faqs.html">FAQs</a>
-                <a href="contact.html">Contact</a>
+                <a style="--i: 0;" href="index.html">Home</a>
+                <a style="--i: 1;" href="services.html">Services</a>
+                <a style="--i: 2;" href="portfolio.html">Portfolio</a>
+                <a style="--i: 3;" href="pricing.html">Pricing</a>
+                <a style="--i: 4;" href="faqs.html">FAQs</a>
+                <a style="--i: 5;" href="about.html">About Us</a>
+                <a style="--i: 6;" href="contact.html">Contact</a>
+                <a style="--i: 7;" href="hire.html" class="menu-hire-btn">HIRE US</a>
             </div>
             <a href="hire.html" class="btn btn-primary">Hire Us</a>
             <!-- Hamburger Menu -->
-            <button class="mobile-menu-toggle" aria-label="Toggle Menu" style="display: none;">
+            <button class="mobile-menu-toggle" aria-label="Toggle Menu">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -111,7 +112,7 @@
             </div>
 
             <!-- Massive Image Showcase -->
-            <div class="fade-up delay-1" style="width: 100%; height: 600px; border-radius: 32px; overflow: hidden; margin-bottom: 8rem; box-shadow: 0 40px 80px rgba(0,0,0,0.6); border: 1px solid rgba(255,255,255,0.05); position: relative;">
+            <div class="fade-up delay-1" style="width: 100%; height: clamp(300px, 50vw, 600px); border-radius: 32px; overflow: hidden; margin-bottom: 8rem; box-shadow: 0 40px 80px rgba(0,0,0,0.6); border: 1px solid rgba(255,255,255,0.05); position: relative;">
                 <img src="https://i.imgur.com/LrXXn2g.jpg" alt="Website Design Showcase" style="width: 100%; height: 100%; object-fit: cover; object-position: center; transition: transform 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
                 <div style="position: absolute; bottom: 0; left: 0; width: 100%; height: 50%; background: linear-gradient(to top, rgba(10,10,14,0.9), transparent); pointer-events: none;"></div>
             </div>
@@ -173,7 +174,7 @@
             <div class="fade-up" style="margin-bottom: 8rem;">
                 <h2 style="font-size: 3rem; text-align: center; margin-bottom: 3rem;">What Sets Our Designs Apart</h2>
                 
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1px; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.05); border-radius: 24px; overflow: hidden;">
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: 1px; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.05); border-radius: 24px; overflow: hidden;">
                     
                     <div style="background: rgba(10,10,14,0.9); padding: 3rem;">
                         <h4 style="font-size: 1.25rem; color: var(--color-accent); margin-bottom: 1rem;">Brand Alignment</h4>
@@ -203,7 +204,7 @@
             </div>
 
             <!-- Two Column: Process & What You Get -->
-            <div class="fade-up" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(450px, 1fr)); gap: 4rem; margin-bottom: 8rem;">
+            <div class="fade-up" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 450px), 1fr)); gap: 4rem; margin-bottom: 8rem;">
                 <!-- Process -->
                 <div>
                     <h2 style="font-size: 2.5rem; margin-bottom: 2rem;">Our Design Process</h2>

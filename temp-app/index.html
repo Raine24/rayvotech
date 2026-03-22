@@ -49,7 +49,7 @@
     <!-- Phosphor Icons -->
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
     <!-- Styles -->
-    <link rel="stylesheet" href="style.css?v=13">
+    <link rel="stylesheet" href="style.css?v=27">
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="https://i.imgur.com/PYTMauh.png">
 </head>
@@ -83,17 +83,18 @@
         <div class="nav-container container">
             <a href="index.html" class="logo" style="display: flex; align-items: center;"><img src="https://i.imgur.com/thPnAch.png" alt="Rayvotech" style="height: 35px; width: auto;" /></a>
             <div class="nav-links">
-                <a href="index.html">Home</a>
-                <a href="about.html">About Us</a>
-                <a href="services.html">Services</a>
-                <a href="portfolio.html">Portfolio</a>
-                <a href="pricing.html">Pricing</a>
-                        <a href="faqs.html">FAQs</a>
-                <a href="contact.html">Contact</a>
+                <a style="--i: 0;" href="index.html">Home</a>
+                <a style="--i: 1;" href="services.html">Services</a>
+                <a style="--i: 2;" href="portfolio.html">Portfolio</a>
+                <a style="--i: 3;" href="pricing.html">Pricing</a>
+                <a style="--i: 4;" href="faqs.html">FAQs</a>
+                <a style="--i: 5;" href="about.html">About Us</a>
+                <a style="--i: 6;" href="contact.html">Contact</a>
+                <a style="--i: 7;" href="hire.html" class="menu-hire-btn">HIRE US</a>
             </div>
             <a href="hire.html" class="btn btn-primary">Hire Us</a>
             <!-- Hamburger Menu -->
-            <button class="mobile-menu-toggle" aria-label="Toggle Menu" style="display: none;">
+            <button class="mobile-menu-toggle" aria-label="Toggle Menu">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -140,80 +141,20 @@
         <div class="perspective-grid"></div>
 
         <div class="container hero-content" style="max-width: 1536px; width: 96%;">
-            
-            <style>
-                .hero-top-split {
-                    display: grid;
-                    grid-template-columns: 1fr 1fr;
-                    gap: 3rem;
-                    align-items: center;
-                    margin-bottom: 3rem;
-                }
-                .hero-text-col {
-                    text-align: left;
-                }
-                .hero-text-col .y2k-badge {
-                    margin-left: 0;
-                }
-                .hero-text-col .hero-title {
-                    text-align: left;
-                }
-                .hero-text-col .hero-subtitle {
-                    text-align: left;
-                    margin-left: 0;
-                    margin-right: 0;
-                    max-width: 600px;
-                    font-size: clamp(0.95rem, 2vw, 1.1rem);
-                    line-height: 1.6;
-                }
-                .hero-text-col .hero-actions {
-                    justify-content: flex-start;
-                }
-                .hero-image-col img {
-                    width: 100%;
-                    height: auto;
-                    display: block;
-                    mix-blend-mode: normal;
-                }
-                @media(max-width: 900px) {
-                    .hero-top-split {
-                        grid-template-columns: 1fr;
-                    }
-                    .hero-text-col {
-                        text-align: center;
-                    }
-                    .hero-text-col .y2k-badge {
-                        margin-left: auto;
-                        margin-right: auto;
-                    }
-                    .hero-text-col .hero-title {
-                        text-align: center;
-                    }
-                    .hero-text-col .hero-subtitle {
-                        text-align: center;
-                        margin-left: auto;
-                        margin-right: auto;
-                    }
-                    .hero-text-col .hero-actions {
-                        justify-content: center;
-                    }
-                }
-            </style>
-
             <div class="hero-top-split">
                 <div class="hero-text-col" style="z-index: 2; position: relative;">
                     <div class="y2k-badge reveal-text">[YOUR GROWTH PARTNER]</div>
-                    <h1 class="hero-title reveal-text delay-1">Built to Elevate. <br> Designed to <span class="text-gradient liquid-text">Convert.</span></h1>
-                    <p class="hero-subtitle reveal-text delay-2">We design, build, and grow digital experiences that attract the right audience <br> and turn them into paying customers.</p>
+                    <h1 class="hero-title reveal-text delay-1">Built to Elevate. <br> Designed to <span class="liquid-text">Convert.</span></h1>
+                    <p class="hero-subtitle reveal-text delay-2">We design, build, and grow digital experiences that attract the right audience and turn them into paying customers.</p>
                     <div class="hero-actions reveal-text delay-3">
-                        <a href="#work" class="btn btn-primary btn-lg">View Our Work <i class="ph ph-arrow-down-right"></i></a>
-                        <a href="#services" class="btn btn-outline btn-lg">Our Expertise</a>
+                        <a href="portfolio.html" class="btn btn-primary btn-lg">View Our Work <i class="ph ph-arrow-down-right"></i></a>
+                        <a href="services.html" class="btn btn-outline btn-lg">Our Expertise</a>
                     </div>
                 </div>
 
                 <div class="hero-image-col reveal-text delay-3" style="position: relative; z-index: 2;">
                     <!-- Blob Image -->
-                    <img src="https://i.imgur.com/ua0e7Kj.png" alt="Digital Growth Experience" style="filter: drop-shadow(0 20px 40px rgba(0,0,0,0.5));">
+                    <img src="https://i.imgur.com/ua0e7Kj.png" alt="Digital Excellence" class="hero-main-img" style="filter: drop-shadow(0 20px 40px rgba(0,0,0,0.5));">
                 </div>
             </div>
 
@@ -477,7 +418,7 @@
                         <li><i class="ph-fill ph-check-circle"></i> 30 days post-launch support</li>
                     </ul>
                     <div class="plan-best-for">Best for: New businesses, landing pages, portfolio sites</div>
-                    <a href="#contact" class="btn btn-outline btn-full">Get Started</a>
+                    <a href="hire.html" class="btn btn-outline btn-full">Get Started</a>
                 </div>
 
                 <!-- Growth — Featured -->
@@ -500,7 +441,7 @@
                         <li><i class="ph-fill ph-check-circle"></i> 60 days post-launch support</li>
                     </ul>
                     <div class="plan-best-for">Best for: Growing brands, e-commerce stores, service businesses</div>
-                    <a href="#contact" class="btn btn-primary btn-full">Get Started</a>
+                    <a href="hire.html" class="btn btn-primary btn-full">Get Started</a>
                 </div>
 
                 <!-- Premium -->
@@ -523,7 +464,7 @@
                         <li><i class="ph-fill ph-check-circle"></i> 90 days post-launch support</li>
                     </ul>
                     <div class="plan-best-for">Best for: Established businesses, complex web apps, scaling brands</div>
-                    <a href="#contact" class="btn btn-outline btn-full">Get Started</a>
+                    <a href="hire.html" class="btn btn-outline btn-full">Get Started</a>
                 </div>
 
             </div>
@@ -544,10 +485,8 @@
                     <div class="tc-stars">★★★★★</div>
                     <p class="tc-quote">"Rayvotech transformed our outdated website into a sleek, conversion-focused platform. Our lead generation doubled within the first month of launch."</p>
                     <div class="tc-author">
-                        <div class="tc-avatar" style="background: linear-gradient(135deg, #00E6F0, #4C1D95);"></div>
                         <div>
-                            <strong>James Mwangi</strong>
-                            <span>CEO, NexaTech Solutions</span>
+                            <strong>James Carter</strong>
                         </div>
                     </div>
                 </div>
@@ -556,10 +495,8 @@
                     <div class="tc-stars">★★★★★</div>
                     <p class="tc-quote">"The team understood our brand vision immediately. They delivered a stunning UI/UX design system that our internal team now builds on. World-class work."</p>
                     <div class="tc-author">
-                        <div class="tc-avatar" style="background: linear-gradient(135deg, #a855f7, #00E6F0);"></div>
                         <div>
-                            <strong>Aisha Kamau</strong>
-                            <span>Head of Product, Oasis Creative</span>
+                            <strong>Emily Davis</strong>
                         </div>
                     </div>
                 </div>
@@ -568,10 +505,8 @@
                     <div class="tc-stars">★★★★★</div>
                     <p class="tc-quote">"From discovery to launch in under 2 weeks — and the SEO results were instant. We jumped 3 pages on Google within a month. Highly recommend Rayvotech."</p>
                     <div class="tc-author">
-                        <div class="tc-avatar" style="background: linear-gradient(135deg, #f59e0b, #EF4444);"></div>
                         <div>
-                            <strong>Daniel Osei</strong>
-                            <span>Founder, GrowthPath Agency</span>
+                            <strong>Daniel Stevens</strong>
                         </div>
                     </div>
                 </div>
@@ -580,10 +515,8 @@
                     <div class="tc-stars">★★★★★</div>
                     <p class="tc-quote">"Professional, communicative, and incredibly talented. Our e-commerce store went live with a flawless checkout experience. Revenue up 60% quarter over quarter."</p>
                     <div class="tc-author">
-                        <div class="tc-avatar" style="background: linear-gradient(135deg, #10B981, #3B82F6);"></div>
                         <div>
-                            <strong>Priya Sharma</strong>
-                            <span>COO, Shopwave Africa</span>
+                            <strong>Sarah Jenkins</strong>
                         </div>
                     </div>
                 </div>
@@ -592,10 +525,8 @@
                     <div class="tc-stars">★★★★★</div>
                     <p class="tc-quote">"We needed a complete brand overhaul — Rayvotech delivered a design system, website, and digital strategy that completely repositioned us in the market."</p>
                     <div class="tc-author">
-                        <div class="tc-avatar" style="background: linear-gradient(135deg, #7C3AED, #f59e0b);"></div>
                         <div>
-                            <strong>Marcus Delroy</strong>
-                            <span>MD, Horizon Fintech</span>
+                            <strong>Marcus Bennett</strong>
                         </div>
                     </div>
                 </div>
@@ -604,10 +535,8 @@
                     <div class="tc-stars">★★★★★</div>
                     <p class="tc-quote">"The attention to detail was unreal — from micro-animations to mobile responsiveness. Our clients constantly compliment how polished the site feels."</p>
                     <div class="tc-author">
-                        <div class="tc-avatar" style="background: linear-gradient(135deg, #EF4444, #a855f7);"></div>
                         <div>
-                            <strong>Sofia Martins</strong>
-                            <span>Creative Director, Pulse Studios</span>
+                            <strong>Sophia Mitchell</strong>
                         </div>
                     </div>
                 </div>
