@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
-    <link rel="stylesheet" href="style.css?v=7">
+    <link rel="stylesheet" href="style.css?v=10">
     <!-- SEO_INJECT_START -->
     <!-- Open Graph / Social Media -->
     <meta property="og:type" content="website">
@@ -103,15 +103,13 @@
                 
                 <!-- Contact Details Card -->
                 <div class="flat-card beam-card fade-up delay-3" style="display: flex; flex-direction: column;">
-                    <div class="card-icon gradient-icon"><i class="ph ph-address-book"></i></div>
+
                     <h3>Get in Touch</h3>
                     <p style="margin-bottom: 2.5rem;">We’d love to hear from you. Reach out through any of these channels to start a conversation.</p>
                     
                     <div style="display: flex; flex-direction: column; gap: 1.75rem; margin-top: auto;">
                         <div style="display: flex; align-items: center; gap: 1.25rem;">
-                            <div style="width: 54px; height: 54px; border-radius: 50%; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); display: flex; align-items: center; justify-content: center; color: var(--color-accent); font-size: 1.5rem; flex-shrink: 0;">
-                                <i class="ph ph-phone-call"></i>
-                            </div>
+
                             <div>
                                 <div style="font-size: 0.85rem; color: var(--text-secondary); text-transform: uppercase;">Phone</div>
                                 <div style="font-weight: 700; color: var(--text-primary); font-size: 1.1rem;">+1-402-866-3825</div>
@@ -119,19 +117,15 @@
                         </div>
                         
                         <div style="display: flex; align-items: center; gap: 1.25rem;">
-                            <div style="width: 54px; height: 54px; border-radius: 50%; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); display: flex; align-items: center; justify-content: center; color: var(--color-accent); font-size: 1.5rem; flex-shrink: 0;">
-                                <i class="ph ph-envelope-simple"></i>
-                            </div>
+
                             <div>
                                 <div style="font-size: 0.85rem; color: var(--text-secondary); text-transform: uppercase;">Email</div>
-                                <div style="font-weight: 700; color: var(--text-primary); font-size: 1.1rem;">info@rayvotech.com</div>
+                                <div style="font-weight: 700; color: var(--text-primary); font-size: 1.1rem;">rayvotech@gmail.com</div>
                             </div>
                         </div>
 
                         <div style="display: flex; align-items: center; gap: 1.25rem;">
-                            <div style="width: 54px; height: 54px; border-radius: 50%; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); display: flex; align-items: center; justify-content: center; color: var(--color-accent); font-size: 1.5rem; flex-shrink: 0;">
-                                <i class="ph ph-map-pin"></i>
-                            </div>
+
                             <div>
                                 <div style="font-size: 0.85rem; color: var(--text-secondary); text-transform: uppercase;">Location</div>
                                 <div style="font-weight: 700; color: var(--text-primary); font-size: 1.1rem; line-height: 1.4;">9029 Burt St, Omaha,<br>NEBRASKA 68114, USA</div>
@@ -143,7 +137,7 @@
                 <!-- Contact Form Card -->
                 <div class="flat-card fade-up delay-4">
                     <div style="display: flex; align-items:center; gap: 1rem; margin-bottom: 2rem;">
-                        <div class="card-icon chrome-icon" style="margin-bottom:0; font-size: 1.5rem; padding: 0.75rem;"><i class="ph ph-paper-plane-right"></i></div>
+
                         <h3 style="margin-bottom:0;">Send a Message</h3>
                     </div>
                     
@@ -441,7 +435,7 @@
                     const formData = new FormData(contactForm);
 
                     try {
-                        const response = await fetch('https://formsubmit.co/ajax/info@rayvotech.com', {
+                        const response = await fetch('https://formsubmit.co/ajax/rayvotech@gmail.com', {
                             method: 'POST',
                             headers: { 
                                 'Accept': 'application/json'
@@ -472,7 +466,7 @@
                         formStatus.style.color = '#fff';
                         formStatus.style.background = 'rgba(255, 60, 60, 0.1)';
                         formStatus.style.borderColor = 'rgba(255, 60, 60, 0.4)';
-                        formStatus.innerHTML = '<i class="ph-fill ph-warning-circle" style="color: #ff4444; font-size:1.2rem; vertical-align:-3px; margin-right:5px;"></i> Something went wrong. Please email us directly at info@rayvotech.com.';
+                        formStatus.innerHTML = '<i class="ph-fill ph-warning-circle" style="color: #ff4444; font-size:1.2rem; vertical-align:-3px; margin-right:5px;"></i> Something went wrong. Please email us directly at rayvotech@gmail.com.';
                     } finally {
                         // Restore button
                         submitBtn.innerHTML = originalBtnText;
@@ -500,18 +494,12 @@
         }
     </style>
 
-    <!--Start of Tawk.to Script-->
-    <script type="text/javascript">
-    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-    (function(){
-    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-    s1.async=true;
-    s1.src='https://embed.tawk.to/6938a8d72e7053198ac976f7/1jc2l73cp';
-    s1.charset='UTF-8';
-    s1.setAttribute('crossorigin','*');
-    s0.parentNode.insertBefore(s1,s0);
-    })();
-    </script>
-    <!--End of Tawk.to Script-->
+        <!-- WhatsApp Widget -->
+    <a href="https://wa.me/14028663825" class="whatsapp-widget" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+        <i class="ph-fill ph-whatsapp-logo"></i>
+    </a>
+    
+    <!-- Jivochat Widget -->
+    <script src="//code.jivosite.com/widget/o7JwQMeMun" async></script>
 </body>
 </html>
