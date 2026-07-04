@@ -653,10 +653,8 @@
     .testi-section { background: var(--navy-mid); padding: 60px 0; }
 
     .stat-row {
-      display: flex;
-      justify-content: center;
-      gap: 0;
-      flex-wrap: wrap;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
       margin: 32px 0 48px;
       background: rgba(201,168,76,0.05);
       border: 1px solid rgba(201,168,76,0.15);
@@ -664,13 +662,13 @@
       overflow: hidden;
     }
     .stat-item {
-      flex: 1;
-      min-width: 130px;
       text-align: center;
       padding: 22px 16px;
       border-right: 1px solid rgba(201,168,76,0.12);
+      border-bottom: 1px solid rgba(201,168,76,0.12);
     }
-    .stat-item:last-child { border-right: none; }
+    .stat-item:nth-child(2n) { border-right: none; }
+    .stat-item:nth-child(n+3) { border-bottom: none; }
     .stat-num {
       font-family: var(--font-display);
       font-size: clamp(1.8rem, 5vw, 2.6rem);
@@ -887,6 +885,9 @@
     @media (min-width: 768px) {
       .wrap { padding: 0 32px; }
       .proof-grid { column-count: 3; }
+      .stat-row { grid-template-columns: repeat(4, 1fr); }
+      .stat-item { border-bottom: none !important; border-right: 1px solid rgba(201,168,76,0.12) !important; }
+      .stat-item:last-child { border-right: none !important; }
     }
   </style>
 </head>
