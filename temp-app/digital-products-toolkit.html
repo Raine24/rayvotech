@@ -1,0 +1,1418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <title>The Ultimate Digital Product Toolkit | PLR + MRR | 12 Done-For-You Products</title>
+  <meta name="description" content="12 done-for-you digital products with full PLR and MRR. Edit, brand, and sell them as your own. Canva templates included. Get everything for just $17 today.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --navy:       #07091A;
+      --navy-mid:   #0D1230;
+      --navy-card:  #111830;
+      --navy-light: #1A2340;
+      --gold:       #C9A84C;
+      --gold-bright:#FFD166;
+      --gold-dark:  #9A7430;
+      --white:      #FFFFFF;
+      --off-white:  #F0EDE6;
+      --muted:      #9AA0B8;
+      --red-accent: #E8192C;
+      --green:      #22C55E;
+
+      --font-display: 'Poppins', system-ui, sans-serif;
+      --font-body:    'Inter', system-ui, sans-serif;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--navy);
+      color: var(--white);
+      font-family: var(--font-body);
+      font-size: 16px;
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+
+    /* ===== UTILITY ===== */
+    .wrap {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    .gold { color: var(--gold-bright); }
+    .red  { color: var(--red-accent); }
+    .center { text-align: center; }
+    .strike { text-decoration: line-through; opacity: 0.5; }
+
+    /* ===== URGENCY BAR ===== */
+    .urgency-bar {
+      background: var(--red-accent);
+      text-align: center;
+      padding: 11px 16px;
+      font-family: var(--font-body);
+      font-weight: 700;
+      font-size: 0.88rem;
+      letter-spacing: 0.3px;
+      color: #fff;
+    }
+    .urgency-bar strong { color: var(--gold-bright); font-size: 1rem; }
+
+    /* ===== HERO ===== */
+    .hero {
+      background: linear-gradient(180deg, #07091A 0%, #0C1228 60%, #07091A 100%);
+      text-align: center;
+      padding: 48px 20px 32px;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: -120px; left: 50%;
+      transform: translateX(-50%);
+      width: 600px; height: 600px;
+      background: radial-gradient(circle, rgba(201,168,76,0.12) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .hero-eyebrow {
+      display: inline-block;
+      background: rgba(201,168,76,0.15);
+      border: 1px solid rgba(201,168,76,0.4);
+      color: var(--gold-bright);
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      padding: 7px 18px;
+      border-radius: 100px;
+      margin-bottom: 24px;
+    }
+
+    .hero h1 {
+      font-family: var(--font-display);
+      font-size: clamp(1.75rem, 6.5vw, 3.2rem);
+      font-weight: 800;
+      line-height: 1.15;
+      color: var(--white);
+      margin-bottom: 18px;
+      letter-spacing: -0.5px;
+    }
+    .hero h1 span.gold-highlight {
+      color: var(--gold-bright);
+    }
+
+    .hero-sub {
+      font-size: clamp(1rem, 3.2vw, 1.18rem);
+      color: var(--off-white);
+      max-width: 560px;
+      margin: 0 auto 34px;
+      line-height: 1.7;
+      font-weight: 400;
+    }
+
+    .hero-img-wrap {
+      position: relative;
+      max-width: 520px;
+      margin: 0 auto 36px;
+    }
+    .hero-img-wrap::after {
+      content: '';
+      position: absolute;
+      bottom: -30px; left: 50%;
+      transform: translateX(-50%);
+      width: 70%; height: 40px;
+      background: radial-gradient(ellipse, rgba(201,168,76,0.25) 0%, transparent 70%);
+      filter: blur(10px);
+      pointer-events: none;
+    }
+    .hero-img {
+      width: 100%;
+      display: block;
+      mix-blend-mode: normal;
+      filter: drop-shadow(0 30px 60px rgba(0,0,0,0.7));
+    }
+
+    /* ===== CTA BUTTON ===== */
+    .btn-cta {
+      display: inline-flex;
+      flex-direction: column;
+      align-items: center;
+      background: linear-gradient(180deg, #FFE566 0%, #F0C800 45%, #C9A030 100%);
+      color: #0A0D1C;
+      font-family: var(--font-body);
+      font-weight: 800;
+      font-size: clamp(1.05rem, 3.5vw, 1.3rem);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      padding: 18px 36px;
+      border-radius: 8px;
+      text-decoration: none;
+      border: none;
+      cursor: pointer;
+      box-shadow: 0 6px 0 #8A6800, 0 10px 30px rgba(201,168,76,0.35);
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+      width: 100%;
+      max-width: 480px;
+      line-height: 1.2;
+    }
+    .btn-cta:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 9px 0 #8A6800, 0 14px 36px rgba(201,168,76,0.4);
+    }
+    .btn-cta:active {
+      transform: translateY(2px);
+      box-shadow: 0 3px 0 #8A6800;
+    }
+    .btn-cta small {
+      display: block;
+      font-size: 0.68rem;
+      font-weight: 500;
+      text-transform: none;
+      letter-spacing: 0;
+      margin-top: 5px;
+      color: #5A4000;
+      opacity: 0.85;
+    }
+
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); box-shadow: 0 6px 0 #8A6800, 0 10px 30px rgba(201,168,76,0.35); }
+      50%       { transform: scale(1.025); box-shadow: 0 6px 0 #8A6800, 0 16px 40px rgba(201,168,76,0.5); }
+    }
+    .btn-pulse { animation: pulse 2.8s ease-in-out infinite; }
+
+    .cta-wrap { text-align: center; margin: 0 20px; }
+
+    .secure-note {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 7px;
+      margin-top: 12px;
+      font-size: 0.75rem;
+      color: var(--muted);
+    }
+    .secure-note svg { flex-shrink: 0; }
+
+    /* ===== DIVIDER ===== */
+    .gold-divider {
+      height: 2px;
+      background: linear-gradient(90deg, transparent, var(--gold), transparent);
+      margin: 0;
+    }
+
+    /* ===== SECTION GENERIC ===== */
+    section { padding: 52px 0; }
+
+    section.dark  { background: var(--navy); }
+    section.mid   { background: var(--navy-mid); }
+    section.card-bg { background: #0A0D1F; }
+
+    .section-eyebrow {
+      display: inline-block;
+      color: var(--gold);
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+
+    .section-title {
+      font-family: var(--font-display);
+      font-size: clamp(1.7rem, 5.5vw, 2.5rem);
+      font-weight: 700;
+      line-height: 1.15;
+      margin-bottom: 16px;
+      color: var(--white);
+    }
+    .section-title em { font-style: italic; color: var(--gold-bright); }
+
+    .section-lead {
+      font-size: 1.05rem;
+      color: var(--off-white);
+      line-height: 1.75;
+      margin-bottom: 0;
+    }
+
+    /* ===== LETTER SECTION ===== */
+    .letter { padding: 48px 0; }
+    .letter p {
+      font-size: 1.04rem;
+      color: var(--off-white);
+      line-height: 1.85;
+      margin-bottom: 20px;
+    }
+    .letter p strong { color: var(--white); }
+    .letter p.big {
+      font-family: var(--font-display);
+      font-size: clamp(1.2rem, 4vw, 1.55rem);
+      color: var(--white);
+      font-style: italic;
+      line-height: 1.5;
+      border-left: 3px solid var(--gold);
+      padding-left: 20px;
+      margin: 28px 0;
+    }
+    .letter .greeting {
+      font-weight: 700;
+      font-size: 1.1rem;
+      color: var(--white);
+      margin-bottom: 22px;
+    }
+
+    /* ===== HIGHLIGHT BOX ===== */
+    .highlight-box {
+      background: rgba(201,168,76,0.08);
+      border: 1px solid rgba(201,168,76,0.25);
+      border-radius: 10px;
+      padding: 22px 24px;
+      margin: 28px 0;
+    }
+    .highlight-box p { margin-bottom: 0; color: var(--off-white); }
+
+    /* ===== WHO IS THIS FOR ===== */
+    .for-list {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      margin-top: 28px;
+    }
+    .for-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      background: var(--navy-card);
+      border: 1px solid rgba(201,168,76,0.12);
+      border-radius: 10px;
+      padding: 16px 18px;
+    }
+    .for-icon {
+      font-size: 1.4rem;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+    .for-item p {
+      font-size: 0.97rem;
+      color: var(--off-white);
+      line-height: 1.6;
+      margin: 0;
+    }
+    .for-item p strong { color: var(--white); }
+
+    /* ===== WHAT'S INSIDE HEADER ===== */
+    .inside-header {
+      background: linear-gradient(135deg, #0D1230 0%, #141B3A 100%);
+      border-top: 1px solid rgba(201,168,76,0.2);
+      border-bottom: 1px solid rgba(201,168,76,0.2);
+      text-align: center;
+      padding: 44px 20px;
+    }
+
+    /* ===== PRODUCT CARD (main) ===== */
+    .main-product-card {
+      background: linear-gradient(135deg, var(--navy-card) 0%, #0F1428 100%);
+      border: 1px solid rgba(201,168,76,0.3);
+      border-radius: 14px;
+      overflow: hidden;
+      margin-bottom: 20px;
+    }
+    .main-product-header {
+      background: linear-gradient(90deg, #1A2340, #111830);
+      border-bottom: 1px solid rgba(201,168,76,0.2);
+      padding: 14px 22px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .badge-main {
+      background: var(--gold);
+      color: #0A0D1C;
+      font-size: 0.7rem;
+      font-weight: 800;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      padding: 4px 12px;
+      border-radius: 100px;
+      flex-shrink: 0;
+    }
+    .main-product-header h3 {
+      font-family: var(--font-display);
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--white);
+      line-height: 1.3;
+    }
+    .main-product-body {
+      padding: 22px;
+    }
+    .main-product-body p {
+      font-size: 0.97rem;
+      color: var(--off-white);
+      line-height: 1.7;
+      margin-bottom: 18px;
+    }
+    .include-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .include-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      font-size: 0.95rem;
+      color: var(--off-white);
+      line-height: 1.55;
+    }
+    .include-list .chk {
+      color: var(--green);
+      font-size: 1rem;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+    .include-list strong { color: var(--white); }
+
+    .value-tag {
+      display: inline-block;
+      margin-top: 18px;
+      background: rgba(201,168,76,0.1);
+      border: 1px solid rgba(201,168,76,0.3);
+      border-radius: 6px;
+      padding: 7px 16px;
+      font-size: 0.85rem;
+      color: var(--gold-bright);
+      font-weight: 700;
+    }
+
+    /* ===== BONUS CARDS ===== */
+    .bonus-section { padding: 44px 0; }
+    .bonus-header-label {
+      background: var(--red-accent);
+      color: #fff;
+      text-align: center;
+      font-weight: 800;
+      font-size: 0.78rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      padding: 10px 20px;
+    }
+
+    .bonus-card {
+      background: var(--navy-card);
+      border: 1px solid rgba(255,255,255,0.07);
+      border-radius: 12px;
+      overflow: hidden;
+      margin-bottom: 16px;
+    }
+    .bonus-card-top {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding: 14px 18px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+      background: rgba(255,255,255,0.03);
+    }
+    .bonus-num {
+      background: var(--red-accent);
+      color: #fff;
+      font-weight: 800;
+      font-size: 0.85rem;
+      width: 32px; height: 32px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .bonus-card-top h4 {
+      font-family: var(--font-display);
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--white);
+      line-height: 1.3;
+    }
+    .bonus-card-body {
+      padding: 16px 18px;
+    }
+    .bonus-card-body p {
+      font-size: 0.93rem;
+      color: var(--muted);
+      line-height: 1.65;
+      margin-bottom: 10px;
+    }
+    .bonus-card-body p:last-child { margin-bottom: 0; }
+    .bonus-card-body p strong { color: var(--off-white); }
+    .bonus-value {
+      display: inline-block;
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: var(--green);
+      border: 1px solid rgba(34,197,94,0.3);
+      border-radius: 4px;
+      padding: 3px 10px;
+      margin-top: 8px;
+    }
+
+    /* ===== FREE BONUS CARDS ===== */
+    .free-bonus-card {
+      background: rgba(34,197,94,0.05);
+      border: 1px solid rgba(34,197,94,0.2);
+      border-radius: 12px;
+      padding: 18px 20px;
+      margin-bottom: 14px;
+    }
+    .free-badge {
+      display: inline-block;
+      background: var(--green);
+      color: #fff;
+      font-size: 0.65rem;
+      font-weight: 800;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      padding: 3px 10px;
+      border-radius: 100px;
+      margin-bottom: 10px;
+    }
+    .free-bonus-card h4 {
+      font-family: var(--font-display);
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--white);
+      margin-bottom: 8px;
+      line-height: 1.3;
+    }
+    .free-bonus-card p {
+      font-size: 0.9rem;
+      color: var(--muted);
+      line-height: 1.6;
+    }
+
+    /* ===== VALUE STACK ===== */
+    .value-stack {
+      background: var(--navy-card);
+      border: 1px solid rgba(201,168,76,0.2);
+      border-radius: 14px;
+      overflow: hidden;
+      margin: 32px 0;
+    }
+    .value-stack-header {
+      background: linear-gradient(90deg, #1A2340, #111830);
+      padding: 14px 22px;
+      font-weight: 800;
+      font-size: 0.8rem;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: var(--gold-bright);
+      border-bottom: 1px solid rgba(201,168,76,0.2);
+    }
+    .value-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 13px 22px;
+      border-bottom: 1px solid rgba(255,255,255,0.05);
+      gap: 12px;
+    }
+    .value-row:last-child { border-bottom: none; }
+    .value-row-name {
+      font-size: 0.93rem;
+      color: var(--off-white);
+      line-height: 1.4;
+    }
+    .value-row-name strong { color: var(--white); display: block; }
+    .value-row-price {
+      font-weight: 800;
+      font-size: 0.95rem;
+      color: var(--gold-bright);
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+    .value-total {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 18px 22px;
+      background: rgba(201,168,76,0.07);
+      border-top: 2px solid rgba(201,168,76,0.3);
+    }
+    .value-total-label {
+      font-weight: 800;
+      font-size: 1rem;
+      color: var(--white);
+    }
+    .value-total-num {
+      font-family: var(--font-display);
+      font-weight: 700;
+      font-size: 1.4rem;
+      color: var(--gold-bright);
+    }
+
+    /* ===== PRICE SECTION ===== */
+    .price-section {
+      background: linear-gradient(180deg, #07091A 0%, #0D1230 100%);
+      text-align: center;
+      padding: 60px 20px;
+      border-top: 1px solid rgba(201,168,76,0.15);
+      border-bottom: 1px solid rgba(201,168,76,0.15);
+    }
+    .price-was {
+      font-size: 1rem;
+      color: var(--muted);
+      text-decoration: line-through;
+      margin-bottom: 4px;
+    }
+    .price-big {
+      font-family: var(--font-display);
+      font-size: clamp(4.5rem, 15vw, 7rem);
+      font-weight: 900;
+      color: var(--gold-bright);
+      line-height: 1;
+      margin-bottom: 6px;
+    }
+    .price-note {
+      font-size: 0.82rem;
+      color: var(--muted);
+      margin-bottom: 32px;
+    }
+
+    /* ===== GUARANTEE ===== */
+    .guarantee-box {
+      background: rgba(34,197,94,0.05);
+      border: 2px solid rgba(34,197,94,0.3);
+      border-radius: 14px;
+      padding: 28px 22px;
+      text-align: center;
+      margin: 40px 0 0;
+    }
+    .guarantee-icon { font-size: 3rem; margin-bottom: 12px; }
+    .guarantee-box h3 {
+      font-family: var(--font-display);
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: var(--green);
+      margin-bottom: 10px;
+    }
+    .guarantee-box p {
+      font-size: 0.95rem;
+      color: var(--muted);
+      line-height: 1.7;
+    }
+
+    /* ===== FINAL CTA ===== */
+    .final-cta {
+      background: linear-gradient(180deg, #0D1230 0%, #07091A 100%);
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    /* ===== FOOTER ===== */
+    .funnel-footer {
+      background: #04060F;
+      border-top: 1px solid rgba(255,255,255,0.06);
+      text-align: center;
+      padding: 28px 20px 48px;
+      font-size: 0.78rem;
+      color: #4A5070;
+      line-height: 1.9;
+    }
+    .funnel-footer a { color: #6A7090; text-decoration: underline; }
+
+    /* ===== STICKY MOBILE CTA ===== */
+    .sticky-mobile {
+      display: none;
+      position: fixed;
+      bottom: 0; left: 0; right: 0;
+      background: var(--gold-bright);
+      padding: 13px 20px;
+      text-align: center;
+      z-index: 9999;
+      box-shadow: 0 -4px 20px rgba(0,0,0,0.4);
+    }
+    .sticky-mobile a {
+      font-weight: 800;
+      font-size: 0.97rem;
+      color: #0A0D1C;
+      text-decoration: none;
+      letter-spacing: 0.3px;
+      text-transform: uppercase;
+    }
+
+    /* ===== RESPONSIVE ===== */
+    /* ===== TESTIMONIALS ===== */
+    .testi-section { background: var(--navy-mid); padding: 60px 0; }
+
+    .stat-row {
+      display: flex;
+      justify-content: center;
+      gap: 0;
+      flex-wrap: wrap;
+      margin: 32px 0 48px;
+      background: rgba(201,168,76,0.05);
+      border: 1px solid rgba(201,168,76,0.15);
+      border-radius: 12px;
+      overflow: hidden;
+    }
+    .stat-item {
+      flex: 1;
+      min-width: 130px;
+      text-align: center;
+      padding: 22px 16px;
+      border-right: 1px solid rgba(201,168,76,0.12);
+    }
+    .stat-item:last-child { border-right: none; }
+    .stat-num {
+      font-family: var(--font-display);
+      font-size: clamp(1.8rem, 5vw, 2.6rem);
+      font-weight: 900;
+      color: var(--gold-bright);
+      line-height: 1;
+      margin-bottom: 4px;
+    }
+    .stat-label {
+      font-size: 0.73rem;
+      color: var(--muted);
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+    }
+
+    .proof-grid {
+      column-count: 1;
+      column-gap: 14px;
+      margin-bottom: 40px;
+    }
+    .proof-card {
+      background: #0A0D1F;
+      border: 1px solid rgba(255,255,255,0.07);
+      border-radius: 12px;
+      overflow: hidden;
+      display: inline-block;
+      width: 100%;
+      margin-bottom: 14px;
+      break-inside: avoid;
+    }
+    .proof-card-img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .proof-card-caption {
+      padding: 11px 13px;
+      border-top: 1px solid rgba(255,255,255,0.06);
+    }
+    .proof-card-caption strong {
+      display: block;
+      font-size: 0.82rem;
+      color: var(--white);
+      margin-bottom: 2px;
+      line-height: 1.3;
+    }
+    .proof-card-caption span {
+      font-size: 0.73rem;
+      color: var(--muted);
+      line-height: 1.4;
+    }
+    .proof-tag {
+      display: inline-block;
+      font-size: 0.62rem;
+      font-weight: 700;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+      padding: 2px 7px;
+      border-radius: 3px;
+      margin-bottom: 5px;
+    }
+    .proof-tag.slack  { background: rgba(74,21,75,0.5); color: #C27FBE; border: 1px solid rgba(196,88,194,0.3); }
+    .proof-tag.stripe { background: rgba(99,91,255,0.15); color: #9B96FF; border: 1px solid rgba(99,91,255,0.3); }
+    .proof-tag.whatsapp { background: rgba(37,211,102,0.1); color: #25D366; border: 1px solid rgba(37,211,102,0.25); }
+    .proof-tag.email  { background: rgba(201,168,76,0.1); color: var(--gold); border: 1px solid rgba(201,168,76,0.25); }
+    .proof-tag.phone  { background: rgba(255,255,255,0.06); color: #aaa; border: 1px solid rgba(255,255,255,0.1); }
+
+    .quote-cards {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      margin-top: 36px;
+    }
+    .quote-card {
+      background: var(--navy-card);
+      border: 1px solid rgba(255,255,255,0.07);
+      border-radius: 12px;
+      padding: 22px 20px;
+    }
+    .quote-stars {
+      color: #FBBF24;
+      font-size: 0.85rem;
+      letter-spacing: 2px;
+      margin-bottom: 10px;
+    }
+    .quote-text {
+      font-size: 0.97rem;
+      color: var(--off-white);
+      line-height: 1.75;
+      font-style: italic;
+      margin-bottom: 16px;
+    }
+    .quote-author {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .quote-avatar {
+      width: 40px; height: 40px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--navy-light), var(--gold-dark));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      font-size: 1rem;
+      color: var(--gold-bright);
+      flex-shrink: 0;
+      border: 2px solid rgba(201,168,76,0.3);
+    }
+    .quote-name {
+      font-weight: 700;
+      font-size: 0.9rem;
+      color: var(--white);
+    }
+    .quote-meta {
+      font-size: 0.75rem;
+      color: var(--muted);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 2px;
+    }
+    .verified-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      font-size: 0.68rem;
+      font-weight: 700;
+      color: var(--green);
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+    }
+    .verified-badge::before {
+      content: '\2713';
+      font-size: 0.7rem;
+    }
+
+    /* ===== INFOGRAPHIC BLOCKS ===== */
+    .infographic-block {
+      margin: 32px 0;
+      border-radius: 14px;
+      overflow: hidden;
+      border: 1px solid rgba(201,168,76,0.15);
+      background: #080C1C;
+    }
+    .infographic-block img {
+      width: 100%;
+      display: block;
+      border-radius: 14px 14px 0 0;
+    }
+    .infographic-block.no-caption img {
+      border-radius: 14px;
+    }
+    .infographic-caption {
+      padding: 12px 16px;
+      background: rgba(201,168,76,0.06);
+      border-top: 1px solid rgba(201,168,76,0.12);
+      font-size: 0.78rem;
+      color: var(--muted);
+      text-align: center;
+      font-style: italic;
+    }
+
+    @media (max-width: 540px) {
+      .sticky-mobile { display: block; }
+      .funnel-footer { padding-bottom: 72px; }
+      .value-row { flex-direction: row; }
+    }
+
+    @media (min-width: 540px) {
+      .proof-grid { column-count: 2; }
+    }
+
+    /* ===== COMPARISON TABLE ===== */
+    .compare-wrap {
+      max-width: 800px;
+      margin: 40px auto;
+      background: var(--dark);
+      border-radius: 12px;
+      border: 1px solid rgba(255,255,255,0.06);
+      overflow: hidden;
+    }
+    .compare-table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+      color: var(--white);
+    }
+    .compare-table th, .compare-table td {
+      padding: 16px 20px;
+      border-bottom: 1px solid rgba(255,255,255,0.04);
+      width: 50%;
+    }
+    .compare-table th {
+      background: rgba(255,255,255,0.03);
+      font-size: 1.1rem;
+      font-family: var(--font-display);
+      font-weight: 700;
+    }
+    .compare-table td.bad {
+      color: var(--muted);
+      border-right: 1px solid rgba(255,255,255,0.04);
+    }
+    .compare-table td.good {
+      color: var(--gold-bright);
+      font-weight: 500;
+    }
+    .compare-table tr:last-child td { border-bottom: none; }
+
+    @media (min-width: 768px) {
+      .wrap { padding: 0 32px; }
+      .proof-grid { column-count: 3; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- TOP URGENCY BAR -->
+  <div class="urgency-bar">
+    Launch week pricing. Price increases to $97 after the next <strong>50 sales</strong>.
+  </div>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <div class="wrap">
+      <div class="hero-eyebrow">PLR + MRR Included</div>
+
+      <h1>
+        Launch Your Digital Product Business This Weekend...<br>
+        <span class="gold-highlight" style="font-size: clamp(1.4rem, 5vw, 2.4rem); display: block; margin-top: 4px;">Without Creating a Single Product.</span>
+      </h1>
+
+      <p class="hero-sub">
+        Get 12 complete digital products, 6,000+ viral video assets, our exact ad campaigns, step-by-step launch training, our free YouTube traffic system, and much more in one bundle. We show you exactly how to start. The Canva templates are built. You just add your brand and keep 100% of the profits.
+      </p>
+
+      <div style="margin: 24px auto; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.06); padding: 18px; border-radius: 8px; font-size: 0.95rem; color: var(--off-white); max-width: 500px; line-height: 1.6;">
+        <strong style="color: var(--gold-bright); display: block; margin-bottom: 6px;">You don't have to create anything.</strong>
+        You don't need Photoshop. You don't need writers. You don't need designers. Open Canva. Change your logo. Publish. Start selling.
+      </div>
+
+      <div class="hero-img-wrap">
+        <img
+          src="digital-toolkit-mockup.png"
+          alt="The Ultimate Digital Product Toolkit - PLR + MRR Bundle"
+          class="hero-img"
+          loading="eager"
+        >
+      </div>
+
+      <div class="cta-wrap">
+        <a href="https://rayvotech.systeme.io/order-form" class="btn-cta btn-pulse" id="hero-cta">
+          Yes! Give Me Instant Access for $17
+          <small>One-time payment. Instant download. Full PLR + MRR rights included.</small>
+        </a>
+        <div class="secure-note">
+          <svg width="13" height="15" viewBox="0 0 13 15" fill="none"><path d="M6.5 0L0.5 2.8v4.2C0.5 10.3 3.1 13.4 6.5 14.5c3.4-1.1 6-4.2 6-7.5V2.8L6.5 0z" fill="#22C55E"/><path d="M5 8.5L3.5 7 4.5 6l.5.5 2.5-2.5 1 1L5 8.5z" fill="#fff"/></svg>
+          Secured by 256-bit SSL. Safe and instant checkout.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="gold-divider"></div>
+
+  <!-- ===== SALES LETTER ===== -->
+  <section class="letter dark">
+    <div class="wrap">
+      <p class="greeting">Dear Future Product Owner,</p>
+
+      <p>If you're reading this, you probably know that selling digital products is the ultimate business model. Total profit margins. No inventory. No shipping.</p>
+
+      <p>But we need to talk about the dark side nobody mentions. You've probably spent weekends trapped in Canva, staring at unfinished ebooks. You've bought courses on funnel building, only to realize you still have absolutely nothing to sell. You've burned time and money while the market moves on without you.</p>
+
+      <div class="infographic-block">
+        <img src="g1-problem.png" alt="The Content Creation Hamster Wheel" loading="lazy">
+        <div class="infographic-caption">The reason most people never get traction: they're stuck building instead of selling.</div>
+      </div>
+
+      <p><strong>I know exactly how this feels.</strong> I spent months trying to build the "perfect" product from scratch. Then I realized a simple truth that shifted everything.</p>
+      
+      <p>The top sellers making daily passive income? <strong>Most of them didn't create those products from scratch.</strong></p>
+
+      <p>They bought the rights. They put their name on it. They sold it. That's the whole business.</p>
+
+      <div class="infographic-block">
+        <img src="g6-missing-piece.png" alt="Why everything you've tried has failed" loading="lazy">
+        <div class="infographic-caption">Most people get one piece. Rarely two. Nobody gives you all three together.</div>
+      </div>
+
+      <div class="infographic-block" style="margin-bottom: 28px;">
+        <img src="g2-false1.png" alt="False Solution: Courses don't give you a product to sell" loading="lazy">
+        <div class="infographic-caption">You paid for knowledge. You still have nothing to sell.</div>
+      </div>
+
+      <div class="infographic-block" style="margin-bottom: 28px;">
+        <img src="g3-false2.png" alt="False Solution: One product is not enough" loading="lazy">
+        <div class="infographic-caption">You can't build consistent income on a single product. You need a full library.</div>
+      </div>
+
+      <p class="big">"What if you could skip the months of creating and go straight to selling?"</p>
+
+      <p>That's exactly what The Ultimate Digital Product Toolkit gives you.</p>
+
+      <p>12 fully built digital products, ready for you to edit in Canva, put your brand on, and sell as your own. Full Private Label Rights and Master Resell Rights included, which means you can even sell the rights to your customers and let them resell too.</p>
+
+      <div class="highlight-box">
+        <p><strong>This is the shortcut most people spend 6 to 12 months wishing they had.</strong> A complete product library, already done, already designed, already packaged. You just show up, customize it, and sell it.</p>
+      </div>
+
+      <p>Imagine this Saturday morning. You download the kit. You open the Canva files. You change the logos and upload the PDFs to Gumroad. By Sunday, your first Stripe payment notification hits your lock screen. And because you have Master Resell Rights, your customers start selling it for you.</p>
+
+      <p>And because we're including three bonus products plus two free extras on top of that, you're walking away with a serious business asset today at a price that makes zero logical sense to say no to.</p>
+    </div>
+  </section>
+
+  <!-- ===== WHO IS THIS FOR ===== -->
+  <section class="mid">
+    <div class="wrap">
+      <p class="section-eyebrow center" style="display:block; text-align:center;">This is for you if...</p>
+      <h2 class="section-title center">You're Ready to Stop Starting from Zero</h2>
+
+      <div class="for-list">
+        <div class="for-item">
+          <div class="for-icon">&#127919;</div>
+          <p><strong>You want to sell digital products</strong> but you don't have weeks or months to build them from the ground up.</p>
+        </div>
+        <div class="for-item">
+          <div class="for-icon">&#128640;</div>
+          <p><strong>You know what PLR and MRR are</strong> and you've been looking for a quality bundle worth actually selling.</p>
+        </div>
+        <div class="for-item">
+          <div class="for-icon">&#128187;</div>
+          <p><strong>You're completely new to this</strong> and you need a full product line to start with, not just one guide and a vague idea.</p>
+        </div>
+        <div class="for-item">
+          <div class="for-icon">&#128176;</div>
+          <p><strong>You want multiple income sources</strong> from one purchase, selling the same products across different platforms and audiences.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GRAPHIC: MECHANISM -->
+  <section class="dark" style="padding: 40px 0 0;">
+    <div class="wrap">
+      <div class="infographic-block no-caption">
+        <img src="g4-mechanism.png" alt="How PLR + MRR Works" loading="lazy">
+      </div>
+      <div class="infographic-block no-caption">
+        <img src="g5-before-after.png" alt="Before vs After: Starting from zero vs Day 1 ready" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WHAT'S INSIDE HEADER ===== -->
+  <div class="inside-header">
+    <div class="wrap">
+      <p class="section-eyebrow" style="display:block;">Here's Everything You Get</p>
+      <h2 class="section-title">The Complete Package Breakdown</h2>
+      <p class="section-lead">One low price. Four products. Two free bonuses. Every single thing you need to start, run, and grow a digital product business.</p>
+    </div>
+  </div>
+
+  <!-- ===== MAIN PRODUCT ===== -->
+  <section class="dark" style="padding: 44px 0;">
+    <div class="wrap">
+
+      <!-- Main Product -->
+      <div class="main-product-card">
+        <div class="main-product-header">
+          <span class="badge-main">Main Product</span>
+          <h3>The Ultimate Digital Product Toolkit</h3>
+        </div>
+        <div class="main-product-body">
+          <p>This is the core of everything. A complete business-in-a-box containing <strong>12 done-for-you digital products</strong> with full Private Label Rights and Master Resell Rights. You can edit every product in Canva, put your name on it, and sell it. You can also sell the rights to your customers so they can do the same.</p>
+          <ul class="include-list">
+            <li><span class="chk">&#10003;</span><div><strong>Skip months of creation:</strong> 12 done-for-you digital products, professionally designed and ready to sell</div></li>
+            <li><span class="chk">&#10003;</span><div><strong>Be the creator:</strong> Full PLR (Private Label Rights) so you can edit and brand everything as your own</div></li>
+            <li><span class="chk">&#10003;</span><div><strong>Multiply your income:</strong> Full MRR (Master Resell Rights) so you can sell the rights to your customers</div></li>
+            <li><span class="chk">&#10003;</span><div><strong>Replace our logo in 3 clicks:</strong> Professional Canva templates make customization take minutes</div></li>
+            <li><span class="chk">&#10003;</span><div><strong>Monetize everywhere:</strong> List on Gumroad, Etsy, Systeme.io, or your own website immediately</div></li>
+          </ul>
+          <div class="value-tag">Value: $297</div>
+          <div class="infographic-block no-caption" style="margin-top: 20px;">
+            <img src="g8-flywheel.png" alt="The MRR Income Multiplier Flywheel" loading="lazy">
+          </div>
+        </div>
+      </div>
+
+      <!-- Bonus 1 -->
+      <div class="bonus-card">
+        <div class="bonus-card-top">
+          <div class="bonus-num">+1</div>
+          <h4>The Ultimate Reels Video Bundle (PLR + MRR)</h4>
+        </div>
+        <div class="bonus-card-body">
+          <p>Over <strong>6,000 engaging videos</strong> with PLR and MRR included. Use them for your Reels, TikToks, and video ads. Or sell them as your own product and multiply your profits.</p>
+          <ul class="include-list" style="margin-bottom: 10px;">
+            <li><span class="chk">&#10003;</span><div><strong>Never stare at a blank screen again:</strong> 6,000+ viral videos (Aesthetic, Luxury, Travel, Real Estate)</div></li>
+            <li><span class="chk">&#10003;</span><div><strong>Go viral without showing your face:</strong> Ultimate Guide to Faceless Reels + 250+ Viral Hooks</div></li>
+            <li><span class="chk">&#10003;</span><div><strong>Double your profits:</strong> PLR & MRR included, so you can sell this entire video vault as your own product</div></li>
+          </ul>
+          <div class="bonus-value">Value: $97</div>
+        </div>
+      </div>
+
+      <!-- Bonus 2 -->
+      <div class="bonus-card">
+        <div class="bonus-card-top">
+          <div class="bonus-num">+2</div>
+          <h4>The YouTube Free Traffic System (PLR)</h4>
+        </div>
+        <div class="bonus-card-body">
+          <p>A complete PLR bundle for getting <strong>free traffic from YouTube</strong> to your funnels and offers, plus a proven product you can sell as your own.</p>
+          <ul class="include-list" style="margin-bottom: 10px;">
+            <li><span class="chk">&#10003;</span><div><strong>Get free automated traffic:</strong> Complete system to drive YouTube viewers directly to your store</div></li>
+            <li><span class="chk">&#10003;</span><div><strong>Sell the system itself:</strong> Full PLR rights, graphic design files, and a professional sales letter included</div></li>
+            <li><span class="chk">&#10003;</span><div><strong>No guesswork:</strong> 8 powerful modules, 74 pages of step-by-step training, AI prompts, and checklists</div></li>
+          </ul>
+          <div class="bonus-value">Value: $47</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== FREE BONUSES ===== -->
+  <section class="mid" style="padding: 0 0 44px;">
+    <div class="bonus-header-label">Plus: Two Free Bonuses Included</div>
+    <div class="wrap" style="padding-top: 28px;">
+
+      <div class="free-bonus-card">
+        <span class="free-badge">Free Bonus</span>
+        <h4>The 60 Minutes Launch</h4>
+        <p>How to launch your first digital product in literally 60 minutes and get sales today. Works even if you have zero audience, zero tech skills, and zero idea what to sell. This bonus alone removes the biggest excuse most people have.</p>
+      </div>
+
+      <div class="free-bonus-card">
+        <span class="free-badge">Free Bonus</span>
+        <h4>AI YouTube Automation Kit: Faceless Channel System</h4>
+        <p>Scripts, voiceovers, thumbnails, workflow, PLR/MRR, and bonus content all in one kit. Want to build a faceless YouTube channel without showing your face or spending hours on content? This gives you the complete ready-to-use system to do it faster with AI.</p>
+      </div>
+
+      <div class="infographic-block no-caption" style="margin-top: 24px;">
+        <img src="g7-steps.png" alt="How To Get Started in 3 Steps" loading="lazy">
+      </div>
+
+      <div class="infographic-block no-caption">
+        <img src="g9-platforms.png" alt="Sell on Any Platform" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== COMPARISON ===== -->
+  <section class="dark" style="padding: 40px 0;">
+    <div class="wrap">
+      <h2 class="section-title center" style="margin-bottom: 8px;">The Smart Way to Build a Business</h2>
+      
+      <div class="compare-wrap">
+        <table class="compare-table">
+          <thead>
+            <tr>
+              <th>Building It Yourself</th>
+              <th>The Toolkit Way</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="bad">3-6 months of writing & designing</td>
+              <td class="good">Ready to sell today</td>
+            </tr>
+            <tr>
+              <td class="bad">Hire expensive designers on Upwork</td>
+              <td class="good">Premium Canva templates included</td>
+            </tr>
+            <tr>
+              <td class="bad">Struggle to write sales copy</td>
+              <td class="good">Proven frameworks done-for-you</td>
+            </tr>
+            <tr>
+              <td class="bad">Thousands of dollars in costs</td>
+              <td class="good">Just $17 one-time payment</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIALS ===== -->
+  <section class="testi-section">
+    <div class="wrap">
+
+      <p class="section-eyebrow" style="display:block; text-align:center;">Real Results. Real Screenshots.</p>
+      <h2 class="section-title center">This Is What It Looks Like <em>In Real Life</em></h2>
+      <p class="section-lead center" style="max-width:520px; margin:10px auto 0;">Different niches. Different starting points. Same result.</p>
+
+      <!-- STAT COUNTERS -->
+      <div class="stat-row">
+        <div class="stat-item">
+          <div class="stat-num">$2.6k</div>
+          <div class="stat-label">In a single day</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">6 wks</div>
+          <div class="stat-label">250 buyers</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">+2x</div>
+          <div class="stat-label">ROAS achieved</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">Day 1</div>
+          <div class="stat-label">First sale</div>
+        </div>
+      </div>
+
+      <!-- PROOF SCREENSHOT GRID -->
+      <div class="proof-grid">
+
+        <div class="proof-card">
+          <img src="proof-coachlii-slack_69e937bc.webp" alt="Coach Lii - $2,600 in a single day from Whop and Stripe" class="proof-card-img" loading="lazy">
+          <div class="proof-card-caption">
+            <span class="proof-tag slack">Slack</span>
+            <strong>Lii, Digital Product Creator</strong>
+            <span>$2,600 in a single day selling digital products</span>
+          </div>
+        </div>
+
+        <div class="proof-card">
+          <img src="proof-payment-notification_84eb2ce0.webp" alt="Sales coming in while asleep" class="proof-card-img" loading="lazy">
+          <div class="proof-card-caption">
+            <span class="proof-tag phone">Lock Screen</span>
+            <strong>Sales while asleep</strong>
+            <span>First time waking up to Stripe notifications using our traffic system</span>
+          </div>
+        </div>
+
+        <div class="proof-card">
+          <img src="proof-stripe-notifications_f81dc797.webp" alt="Multiple Stripe payments stacking up" class="proof-card-img" loading="lazy">
+          <div class="proof-card-caption">
+            <span class="proof-tag stripe">Stripe</span>
+            <strong>Payments stacking up</strong>
+            <span>$47, $347, $47 from different buyers buying the rebranded bundle</span>
+          </div>
+        </div>
+
+        <div class="proof-card">
+          <img src="proof-daniel-whatsapp_1685f46e.webp" alt="Daniel Jones - sold another high-ticket mentorship" class="proof-card-img" loading="lazy">
+          <div class="proof-card-caption">
+            <span class="proof-tag whatsapp">WhatsApp</span>
+            <strong>Daniel Jones</strong>
+            <span>Sold his first high-ticket upsell after using the toolkit as a front-end offer</span>
+          </div>
+        </div>
+
+        <div class="proof-card">
+          <img src="proof-chabert-slack_1941b72c.png" alt="Daniel Chabert - +2x ROAS" class="proof-card-img" style="object-position: center;" loading="lazy">
+          <div class="proof-card-caption">
+            <span class="proof-tag slack">Slack</span>
+            <strong>Daniel Chabert</strong>
+            <span>Launched his rebranded products with ads and immediately hit +2x ROAS.</span>
+          </div>
+        </div>
+
+        <div class="proof-card">
+          <img src="proof-kieran-email_7ab4bd52.png" alt="Kieran Moloney - sale within hours of launch" class="proof-card-img" style="object-position: center;" loading="lazy">
+          <div class="proof-card-caption">
+            <span class="proof-tag email">Email</span>
+            <strong>Kieran Moloney</strong>
+            <span>Got his first Gumroad sale within hours of customizing the Canva templates.</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- WRITTEN REVIEWS -->
+      <p class="section-eyebrow" style="display:block; text-align:center; margin-bottom: 10px;">What Buyers Say</p>
+      <h3 class="section-title center" style="font-size: clamp(1.4rem, 4.5vw, 2rem); margin-bottom: 24px;">What People Are Saying</h3>
+
+      <div class="quote-cards">
+
+        <div class="quote-card">
+          <div class="quote-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="quote-text">&ldquo;I uploaded these to Gumroad and got 250 buyers for my rebranded product within 6 weeks. I used the ad campaign guide included in the bundle, and my ad spend was more than covered by the income from the front-end sales.&rdquo;</p>
+          <div class="quote-author">
+            <div class="quote-avatar">C</div>
+            <div>
+              <div class="quote-name">Colin Gallagher</div>
+              <div class="quote-meta">
+                <span class="verified-badge">Verified Buyer</span>
+                <span style="color:#555">|</span>
+                <span>Digital Creator &middot; @colingrowlancer</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="quote-card">
+          <div class="quote-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="quote-text">&ldquo;Banger of a product. I&rsquo;ve bought a lot of PLR and MRR bundles in this space. This is the only one where the Canva templates actually looked premium, and I got my first Etsy sale the same day I listed them.&rdquo;</p>
+          <div class="quote-author">
+            <div class="quote-avatar">R</div>
+            <div>
+              <div class="quote-name">Ryan Anthony</div>
+              <div class="quote-meta">
+                <span class="verified-badge">Verified Buyer</span>
+                <span style="color:#555">|</span>
+                <span>@dreamleadz</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- CTA INSIDE TESTIMONIALS -->
+      <div class="cta-wrap" style="margin-top: 40px;">
+        <a href="https://rayvotech.systeme.io/order-form" class="btn-cta" id="testi-cta">
+          GET INSTANT ACCESS FOR ONLY $17
+          <small>100% money-back guarantee &middot; Instant access &middot; No monthly fees</small>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== VALUE STACK ===== -->
+  <section class="dark" style="padding: 20px 0 52px;">
+    <div class="wrap">
+      
+      <div class="infographic-block no-caption" style="margin-bottom: 40px;">
+        <img src="g10-system.png" alt="Everything You're Getting Today - One Complete Business System" loading="lazy">
+      </div>
+
+      <p class="section-eyebrow center" style="display:block; text-align:center; margin-bottom: 8px;">What You're Getting</p>
+      <h2 class="section-title center" style="margin-bottom: 24px;">Total Value: Over <em>$441</em></h2>
+
+      <div class="value-stack">
+        <div class="value-stack-header">What's Included Today</div>
+        <div class="value-row">
+          <div class="value-row-name"><strong>The Ultimate Digital Product Toolkit</strong><span style="font-size:0.82rem; color: var(--muted); display:block;">12 products, PLR + MRR, Canva templates</span></div>
+          <div class="value-row-price">$297</div>
+        </div>
+        <div class="value-row">
+          <div class="value-row-name"><strong>The Ultimate Reels Video Bundle</strong><span style="font-size:0.82rem; color: var(--muted); display:block;">6,000+ videos, PLR + MRR</span></div>
+          <div class="value-row-price">$97</div>
+        </div>
+        <div class="value-row">
+          <div class="value-row-name"><strong>The YouTube Free Traffic System</strong><span style="font-size:0.82rem; color: var(--muted); display:block;">Full PLR, 8 modules, sales letter</span></div>
+          <div class="value-row-price">$47</div>
+        </div>
+        <div class="value-row">
+          <div class="value-row-name"><strong>Free Bonus: The 60 Minutes Launch</strong></div>
+          <div class="value-row-price" style="color: var(--green);">FREE</div>
+        </div>
+        <div class="value-row">
+          <div class="value-row-name"><strong>Free Bonus: AI YouTube Automation Kit</strong></div>
+          <div class="value-row-price" style="color: var(--green);">FREE</div>
+        </div>
+        <div class="value-total">
+          <div class="value-total-label">Your Price Today</div>
+          <div class="value-total-num">$17</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== PRICE SECTION ===== -->
+  <section class="price-section" id="order">
+    <div class="wrap">
+      <p class="section-eyebrow" style="display:block; text-align:center; margin-bottom:16px;">Ready to Get Started?</p>
+      <h2 class="section-title" style="text-align:center; margin-bottom: 24px;">Get Everything for <em>One Low Price</em></h2>
+
+      <div class="price-was">Regular price: $300</div>
+      <div class="price-big">$17</div>
+      <p class="price-note">One-time payment. No monthly fees. No hidden charges. Instant digital delivery.</p>
+
+      <div class="cta-wrap">
+        <a href="https://rayvotech.systeme.io/order-form" class="btn-cta btn-pulse" id="order-cta">
+          Yes! I Want Everything for $17
+          <small>Click here to go to the secure order form</small>
+        </a>
+        <div class="secure-note">
+          <svg width="13" height="15" viewBox="0 0 13 15" fill="none"><path d="M6.5 0L0.5 2.8v4.2C0.5 10.3 3.1 13.4 6.5 14.5c3.4-1.1 6-4.2 6-7.5V2.8L6.5 0z" fill="#22C55E"/><path d="M5 8.5L3.5 7 4.5 6l.5.5 2.5-2.5 1 1L5 8.5z" fill="#fff"/></svg>
+          Secured checkout. Instant access after payment.
+        </div>
+      </div>
+
+      <div class="guarantee-box">
+        <div class="guarantee-icon">&#128737;</div>
+        <h3>The "Download Everything" 30-Day Guarantee</h3>
+        <p>Download everything. Open every folder. Brand the products. If you're not convinced this is the fastest shortcut to launching your digital product business, email us within 30 days for a full refund. You take zero risk today.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FINAL CTA ===== -->
+  <section class="final-cta">
+    <div class="wrap">
+      <p class="section-eyebrow" style="display:block; text-align:center; margin-bottom:14px;">Price Increases After Next 50 Sales</p>
+      <h2 class="section-title center" style="margin-bottom: 16px;">
+        12 Products. 6,000+ Videos. Full Rights.<br>
+        <em>All Yours for $17.</em>
+      </h2>
+      <p class="section-lead center" style="margin-bottom: 32px; max-width: 520px; margin-left:auto; margin-right:auto;">
+        Don't let today end without doing the one thing that could change how your online business works. The products are done. The rights are included. Everything is ready for you.
+      </p>
+      <div class="cta-wrap">
+        <a href="https://rayvotech.systeme.io/order-form" class="btn-cta btn-pulse" id="final-cta">
+          Get Instant Access for $17 Now
+          <small>Secure order form. Instant download after payment.</small>
+        </a>
+      </div>
+      <p style="text-align:center; margin-top: 24px; font-size: 0.82rem; color: var(--muted);">
+        Questions? Email us at <a href="mailto:rayvotech@gmail.com" style="color: var(--gold); text-decoration: none;">rayvotech@gmail.com</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="funnel-footer">
+    <div class="wrap">
+      <p>&copy; 2025 Rayvotech. All Rights Reserved.</p>
+      <p style="margin-top: 6px;">
+        <a href="/privacy.html">Privacy Policy</a> &nbsp;|&nbsp;
+        <a href="/terms.html">Terms of Service</a> &nbsp;|&nbsp;
+        <a href="/disclaimer.html">Disclaimer</a>
+      </p>
+      <p style="margin-top: 12px; color: #333855; font-size: 0.72rem; max-width: 520px; margin-left: auto; margin-right: auto; line-height: 1.8;">
+        Results are not typical. Individual results depend on effort, experience, and market conditions. This page contains affiliate or resell rights products. Please review our full disclaimer for details.
+      </p>
+    </div>
+  </footer>
+
+  <!-- STICKY MOBILE CTA -->
+  <div class="sticky-mobile">
+    <a href="https://rayvotech.systeme.io/order-form">Get Everything for $17 Now &rarr;</a>
+  </div>
+
+</body>
+</html>
